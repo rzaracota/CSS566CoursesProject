@@ -8,6 +8,13 @@ namespace Backend_Api.Repo_Model {
      * References an image for a module.
      **/
     public class ModuleImageContent : ModuleBaseContent {
+        /**
+         * Constructs a new ModuleImageContent.
+         **/
+        public ModuleImageContent() {
+            Type = "image";
+        }
+
         public string Link { get; set; }
         public string Caption { get; set; }
     }

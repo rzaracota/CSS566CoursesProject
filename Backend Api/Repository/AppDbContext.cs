@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Backend_Api.Repo_Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,14 @@ namespace Backend_Api.Repository {
      **/
     public class AppDbContext : DbContext {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.Entity<Course>().ToTable("Course");
+            modelBuilder.Entity<Module>().ToTable("Module");
+            modelBuilder.Entity<ModuleTextContent>().ToTable("ModuleTextContent");
+            modelBuilder.Entity<ModuleVideoContent>().ToTable("ModuleVideoContent");
+            modelBuilder.Entity<ModuleImageContent>().ToTable("ModuleImageContent");
+            modelBuilder.Entity<ModuleQuizContent>().ToTable("ModuleQuizContent");
+        }
     }
 }

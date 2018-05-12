@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Backend_Api.Repo_Model;
+using Backend_Api.Repository;
 
 namespace Backend_Api
 {
@@ -39,8 +40,8 @@ namespace Backend_Api
                 var services = scope.ServiceProvider;
                 try
                 {
-                    Repository.ModuleRepository moduleRepository
-                        = services.GetRequiredService<Repository.ModuleRepository>();
+                    IModuleRepository moduleRepository
+                        = services.GetRequiredService<IModuleRepository>();
                     moduleRepository.CreateModule(module1);
                 }
                 catch (Exception ex)

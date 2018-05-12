@@ -11,7 +11,8 @@ namespace Backend_Api.Repository {
     public interface ICourseRepository {
         void CreateCourse(Course course);
         void UpdateCourse(Course course);
-        void GetCourse(string id);
+        Course GetCourse(string id);
+        IEnumerable<Course> GetAllCourses();
         void DeleteCourse(string id);
     }
 }

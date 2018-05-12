@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Backend_Api.Repository {
+    /**
+     * Provides CRUD operations for the Module model.
+     **/
     public interface IModuleRepository {
         void CreateModule(Module module);
         void UpdateModule(Module module);

@@ -20,8 +20,6 @@ namespace Backend_Api.Repository {
             courses = context.Set<Course>();
         }
 
-        public AppDbContext Context { get; }
-
         public void CreateCourse(Course course) {
             context.Entry(course).State = EntityState.Added;
             context.SaveChanges();

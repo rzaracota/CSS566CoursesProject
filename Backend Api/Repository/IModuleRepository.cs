@@ -11,7 +11,8 @@ namespace Backend_Api.Repository {
     public interface IModuleRepository {
         void CreateModule(Module module);
         void UpdateModule(Module module);
-        void GetModule(string id);
+        Module GetModule(string id);
+        IEnumerable<Module> GetAllModules();
         void DeleteModule(string id);
     }
 }

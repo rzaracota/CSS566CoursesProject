@@ -11,6 +11,6 @@ namespace Backend_Api.Repo_Model {
     public class Course {
         public string Id { get; set; }
         public string Name { get; set; }
-        public List<Module> Modules { get; set; }
+        public List<CourseModule> CourseModules { get; set; }
     }
 }

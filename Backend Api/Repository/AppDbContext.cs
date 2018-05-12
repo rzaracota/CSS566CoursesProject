@@ -19,6 +19,20 @@ namespace Backend_Api.Repository {
             modelBuilder.Entity<ModuleVideoContent>().ToTable("ModuleVideoContent");
             modelBuilder.Entity<ModuleImageContent>().ToTable("ModuleImageContent");
             modelBuilder.Entity<ModuleQuizContent>().ToTable("ModuleQuizContent");
+
+            // set many-to-many relationship between courses and modules
+            modelBuilder.Entity<CourseModule>().HasKey(
+                x => new { x.CourseId, x.ModuleId });
+
+            modelBuilder.Entity<CourseModule>()
+                        .HasOne(x => x.Course)
+                        .WithMany(x => x.CourseModules)
+                        .HasForeignKey(x => x.CourseId);
+
+            modelBuilder.Entity<CourseModule>()
+                        .HasOne(x => x.Module)
+                        .WithMany(x => x.CourseModules)
+                        .HasForeignKey(x => x.ModuleId);
         }
     }
 }

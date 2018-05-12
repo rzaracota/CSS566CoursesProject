@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using Backend_Api.Repo_Model;
 
 namespace Backend_Api
 {
@@ -14,7 +16,41 @@ namespace Backend_Api
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            // add initial fake data for testing
+            Module module1 = new Module
+            {
+                Id = "123",
+                Author = "John Doe",
+                Title = "Agile Development",
+                Layout = new List<ModuleBaseContent>
+                {
+                    new ModuleTextContent
+                    {
+                        Heading = "Motivation for Agile",
+                        Text = "This is why we want to do Agile"
+                    }
+                }
+            };            
+
+            var host = BuildWebHost(args);
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    Repository.ModuleRepository moduleRepository
+                        = services.GetRequiredService<Repository.ModuleRepository>();
+                    moduleRepository.CreateModule(module1);
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred while seeding the database.");
+                }
+            }
+
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

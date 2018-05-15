@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Backend_Api.Controllers
 {
     //[Produces("application/json")]
-    [Route("module/[controller]")]
+    [Route("module/")]
     public class ModuleController : Controller
     {
         private IModuleRepository repository;

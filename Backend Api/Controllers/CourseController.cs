@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Backend_Api.Repo_Model;
 using Backend_Api.Repository;
@@ -34,12 +36,26 @@ namespace Backend_Api.Controllers
             return repository.GetCourse(id);
         }
 
-        // POST course/
+        //POST course/
         [HttpPost]
         public void Post([FromBody] Course course)
         {
             repository.CreateCourse(course);
         }
+
+        //[HttpPost]
+        //public void Post()
+        //{
+        //    string documentContents;
+        //    using (Stream receiveStream = Request.Body )
+        //    {
+        //        using (StreamReader readStream = new StreamReader(receiveStream, Encoding.UTF8))
+        //        {
+        //            documentContents = readStream.ReadToEnd();
+        //        }
+        //    }
+        //    System.Diagnostics.Debug.Write(documentContents);
+        //}
 
         // PUT course/5
         [HttpPut("{id}")]

@@ -27,8 +27,11 @@ namespace Backend_Api.Repository {
 
         public void DeleteCourse(string id) {
             Course course = GetCourse(id);
-            courses.Remove(course);
-            context.SaveChanges();
+            if (course != null)
+            {
+                courses.Remove(course);
+                context.SaveChanges();
+            }
         }
 
         public List<Course> GetAllCourses() {
@@ -36,7 +39,9 @@ namespace Backend_Api.Repository {
         }
 
         public Course GetCourse(string id) {
-            return courses.SingleOrDefault(c => c.CourseId == id);
+            //return courses.SingleOrDefault(c => c.CourseId == id);
+            Course course = courses.Where(c => c.CourseId == id).FirstOrDefault();
+            return course;
         }
 
         public void UpdateCourse(Course course) {

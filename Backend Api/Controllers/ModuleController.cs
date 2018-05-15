@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Backend_Api.Controllers
 {
-    //[Produces("application/json")]
+    [Produces("application/json")]
     [Route("module/")]
     public class ModuleController : Controller
     {
@@ -19,35 +19,35 @@ namespace Backend_Api.Controllers
             this.repository = r;
         }
 
-        // GET api/values
+        // GET module/
         [HttpGet]
         public List<Module> Get()
         {
             return repository.GetAllModules();
         }
 
-        // GET api/values/5
+        // GET module/5
         [HttpGet("{id}")]
         public Module Get(string id)
         {
             return repository.GetModule(id);
         }
 
-        // POST api/values
+        // POST module/
         [HttpPost]
         public void Post([FromBody] Module module)
         {
             repository.CreateModule(module);
         }
 
-        // PUT api/values/5
+        // PUT module/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Module module)
         {
             repository.UpdateModule(module);
         }
 
-        // DELETE api/values/5
+        // DELETE module/5
         [HttpDelete("{id}")]
         public void Delete(string id)
         {

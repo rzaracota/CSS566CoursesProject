@@ -30,8 +30,11 @@ namespace Backend_Api.Repository {
 
         public void DeleteModule(string id) {
             Module module = GetModule(id);
-            modules.Remove(module);
-            context.SaveChanges();
+            if (module != null)
+            {
+                modules.Remove(module);
+                context.SaveChanges();
+            }
         }
 
         public List<Module> GetAllModules() {
@@ -39,7 +42,8 @@ namespace Backend_Api.Repository {
         }
 
         public Module GetModule(string id) {
-            return modules.SingleOrDefault(m => m.ModuleId == id);
+
+            return modules.Where(m => m.ModuleId == id).FirstOrDefault(); 
         }
 
         public void UpdateModule(Module module) {

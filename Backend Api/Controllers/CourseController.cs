@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Backend_Api.Controllers
 {
-    //[Produces("application/json")]
+    [Produces("application/json")]
     [Route("course/")]
     public class CourseController : Controller
     {
@@ -20,35 +20,35 @@ namespace Backend_Api.Controllers
             this.repository = r;
         }
 
-        // GET api/values
+        // GET course/
         [HttpGet]
         public List<Course> Get()
         {
             return repository.GetAllCourses();
         }
 
-        // GET api/values/5
+        // GET course/5
         [HttpGet("{id}")]
         public Course Get(string id)
         {
             return repository.GetCourse(id);
         }
 
-        // POST api/values
+        // POST course/
         [HttpPost]
         public void Post([FromBody] Course course)
         {
             repository.CreateCourse(course);
         }
 
-        // PUT api/values/5
+        // PUT course/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Course course)
         {
             repository.UpdateCourse(course);
         }
 
-        // DELETE api/values/5
+        // DELETE course/5
         [HttpDelete("{id}")]
         public void Delete(string id)
         {

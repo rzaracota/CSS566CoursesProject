@@ -12,7 +12,7 @@ namespace Backend_Api.Repository {
         void CreateModule(Module module);
         void UpdateModule(Module module);
         Module GetModule(string id);
-        IEnumerable<Module> GetAllModules();
+        List<Module> GetAllModules();
         void DeleteModule(string id);
     }
 }

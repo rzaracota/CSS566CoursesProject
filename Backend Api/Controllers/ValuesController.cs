@@ -20,7 +20,7 @@ namespace Backend_Api.Controllers
 
         // GET api/values
         [HttpGet]
-        public IEnumerable<Module> Get()
+        public List<Module> Get()
         {
             return moduleRepository.GetAllModules();
         }

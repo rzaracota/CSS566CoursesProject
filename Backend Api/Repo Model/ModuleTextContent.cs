@@ -7,7 +7,7 @@ namespace Backend_Api.Repo_Model {
     /**
      * Contains text content for a module.
      **/
-    public class ModuleTextContent : ModuleBaseContent {
+    public class ModuleTextContent {
         /**
          * Constructs a new ModuleTextContent.
          **/
@@ -15,6 +15,9 @@ namespace Backend_Api.Repo_Model {
             Type = "text";
         }
 
+        public string Id { get; set; }
+        public string Heading { get; set; }
+        public string Type { get; set; }
         public string Text { get; set; }
     }
 }

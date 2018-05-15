@@ -23,7 +23,7 @@ namespace Backend_Api
                 Id = "123",
                 Author = "John Doe",
                 Title = "Agile Development",
-                Layout = new List<ModuleBaseContent>
+                Layout = new List<ModuleTextContent>
                 {
                     new ModuleTextContent
                     {

@@ -12,7 +12,7 @@ namespace Backend_Api.Repository {
         void CreateCourse(Course course);
         void UpdateCourse(Course course);
         Course GetCourse(string id);
-        IEnumerable<Course> GetAllCourses();
+        List<Course> GetAllCourses();
         void DeleteCourse(string id);
     }
 }

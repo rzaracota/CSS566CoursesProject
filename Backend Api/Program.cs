@@ -18,9 +18,15 @@ namespace Backend_Api
         public static void Main(string[] args)
         {
             // add initial fake data for testing
+            Course course1 = new Course
+            {
+                CourseId = "1",
+                Name = "John Doe's course",
+            };
+
             Module module1 = new Module
             {
-                Id = "123",
+                ModuleId = "123",
                 Author = "John Doe",
                 Title = "Agile Development",
                 Layout = new List<ModuleTextContent>
@@ -31,7 +37,18 @@ namespace Backend_Api
                         Text = "This is why we want to do Agile"
                     }
                 }
-            };            
+            };
+
+            CourseModule courseModule1 = new CourseModule
+            {
+                CourseId = course1.CourseId,
+                Course = course1,
+                ModuleId = module1.ModuleId,
+                Module = module1
+            };
+
+            course1.CourseModules.Add(courseModule1);
+            module1.CourseModules.Add(courseModule1);
 
             var host = BuildWebHost(args);
 
@@ -43,6 +60,10 @@ namespace Backend_Api
                     IModuleRepository moduleRepository
                         = services.GetRequiredService<IModuleRepository>();
                     moduleRepository.CreateModule(module1);
+
+                    ICourseRepository courseRepository
+                        = services.GetRequiredService<ICourseRepository>();
+                    courseRepository.CreateCourse(course1);
                 }
                 catch (Exception ex)
                 {

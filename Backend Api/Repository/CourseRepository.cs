@@ -31,12 +31,12 @@ namespace Backend_Api.Repository {
             context.SaveChanges();
         }
 
-        public IEnumerable<Course> GetAllCourses() {
-            return courses.AsEnumerable();
+        public List<Course> GetAllCourses() {
+            return courses.ToList();
         }
 
         public Course GetCourse(string id) {
-            return courses.SingleOrDefault(c => c.Id == id);
+            return courses.SingleOrDefault(c => c.CourseId == id);
         }
 
         public void UpdateCourse(Course course) {

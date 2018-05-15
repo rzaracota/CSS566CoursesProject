@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,7 +16,10 @@ namespace Backend_Api.Repo_Model {
             Type = "video";
         }
 
+        [JsonProperty(PropertyName = "Link")]
         public string Link { get; set; }
+
+        [JsonProperty(PropertyName = "Caption")]
         public string Caption { get; set; }
     }
 }

@@ -10,8 +10,8 @@ using Newtonsoft.Json;
 namespace Backend_Api.Repository {
     public class ModuleRepository : IModuleRepository {
         private AppDbContext context;
-        //private DbSet<Module> modules;
-        private List<Module> modules;
+        private DbSet<Module> modules;
+        //private List<Module> modules;
 
         /**
          * Constructs a ModuleRepository.
@@ -20,43 +20,12 @@ namespace Backend_Api.Repository {
          **/
         public ModuleRepository(AppDbContext context) {
             this.context = context;
-            modules = new List<Module>();
+            modules = context.Set<Module>();
         }
 
         public void CreateModule(Module module) {
-            // TODO: write to file
-            List<Module> modules = new List<Module>();
-
-            // read from a file
-            using (StreamReader sr = new StreamReader("C:\\Users\\mitchell.t.lee\\Desktop\\modules.txt"))
-            {
-                List<Module> readModules = JsonConvert.DeserializeObject<List<Module>>(sr.ReadToEnd());
-
-                if (readModules != null) {
-                    modules = readModules;
-                }
-            }
-
-            modules.Add(module);
-
-            // write out to a file
-            try
-            {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
-                using (StreamWriter sw = new StreamWriter("C:\\Users\\mitchell.t.lee\\Desktop\\modules.txt"))
-                {
-
-                    sw.WriteLine(JsonConvert.SerializeObject(modules));
-                }
-
-            }
-            catch (Exception e)
-            {
-                // Let the user know what went wrong.
-                Console.WriteLine("The file could not be read:");
-                Console.WriteLine(e.Message);
-            }
+            context.Entry(module).State = EntityState.Added;
+            context.SaveChanges();
         }
 
         public void DeleteModule(string id) {
@@ -66,24 +35,11 @@ namespace Backend_Api.Repository {
         }
 
         public List<Module> GetAllModules() {
-            List<Module> modules = new List<Module>();
-
-            // read from a file
-            using (StreamReader sr = new StreamReader("C:\\Users\\mitchell.t.lee\\Desktop\\modules.txt"))
-            {
-                List<Module> readModules = JsonConvert.DeserializeObject<List<Module>>(sr.ReadToEnd());
-
-                if (readModules != null)
-                {
-                    modules = readModules;
-                }
-            }
-
-            return modules;
+            return modules.ToList();
         }
 
         public Module GetModule(string id) {
-            return modules.SingleOrDefault(m => m.Id == id);
+            return modules.SingleOrDefault(m => m.ModuleId == id);
         }
 
         public void UpdateModule(Module module) {

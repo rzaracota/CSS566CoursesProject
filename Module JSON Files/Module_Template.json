@@ -3,6 +3,7 @@
 	"Title": <Module title>
 	"Author": <Module Author's Name>
 	"Courses": [<Array of Courses this Module is part of>]
+	"Keywords": [<Array of keywords that describe this module>]
 	"Layout": [
 		{
 			"heading": <heading of section>,
@@ -26,6 +27,11 @@
 			"type": "quiz",
 			"link": <link to quiz>
 		},
+		{
+			"heading": <heading of section>,
+			"type": "slides",
+			"link": <link to slides>
+		}
 	]
 	}
 }

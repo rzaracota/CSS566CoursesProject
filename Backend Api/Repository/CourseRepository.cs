@@ -7,46 +7,41 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Backend_Api.Repository {
     public class CourseRepository : ICourseRepository {
-        private AppDbContext context;
-        private DbSet<Course> courses;
-
+        private IDocDBRepo repo;
         /**
          * Constructs a CourseRepository.
          * 
          * @param context Database context manager.
          **/
-        public CourseRepository(AppDbContext context) {
-            this.context = context;
-            courses = context.Set<Course>();
+        public CourseRepository(IDocDBRepo repo) {
+            this.repo = repo;
+            this.repo.Initialize();
         }
 
-        public void CreateCourse(Course course) {
-            context.Entry(course).State = EntityState.Added;
-            context.SaveChanges();
-        }
-
-        public void DeleteCourse(string id) {
-            Course course = GetCourse(id);
-            if (course != null)
+        public async Task CreateCourse(Course course) {
+            try
             {
-                courses.Remove(course);
-                context.SaveChanges();
+                var result = await repo.CreateCourseAsync(course);
+            } catch (Exception e)
+            {
+
             }
         }
 
-        public List<Course> GetAllCourses() {
-            return courses.ToList();
+        public async Task DeleteCourseAsync(string id) {
+            await repo.DeleteCourseAsync(id);
         }
 
-        public Course GetCourse(string id) {
-            //return courses.SingleOrDefault(c => c.CourseId == id);
-            Course course = courses.Where(c => c.CourseId == id).FirstOrDefault();
-            return course;
+        public async Task<List<Course>> GetAllCoursesAsync() {
+            return await repo.GetAllCourseAsync();
         }
 
-        public void UpdateCourse(Course course) {
-            context.Entry(course).State = EntityState.Modified;
-            context.SaveChanges();
+        public async Task<Course> GetCourse(string id) {
+            return await repo.GetCourseAsync(id);
+        }
+
+        public async Task UpdateCourse(Course course) {
+            await repo.UpdateCourseAsync(course.CourseId, course);
         }
     }
 }

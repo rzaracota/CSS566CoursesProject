@@ -9,8 +9,7 @@ using Newtonsoft.Json;
 
 namespace Backend_Api.Repository {
     public class ModuleRepository : IModuleRepository {
-        private AppDbContext context;
-        private DbSet<Module> modules;
+        private IDocDBRepo repo;
         //private List<Module> modules;
 
         /**
@@ -18,37 +17,36 @@ namespace Backend_Api.Repository {
          * 
          * @param context Database context manager.
          **/
-        public ModuleRepository(AppDbContext context) {
-            this.context = context;
-            modules = context.Set<Module>();
+        public ModuleRepository(IDocDBRepo repo) {
+            this.repo = repo;
+            this.repo.Initialize();
         }
 
-        public void CreateModule(Module module) {
-            context.Entry(module).State = EntityState.Added;
-            context.SaveChanges();
-        }
-
-        public void DeleteModule(string id) {
-            Module module = GetModule(id);
-            if (module != null)
+        public async Task CreateModule(Module module) {
+            try
             {
-                modules.Remove(module);
-                context.SaveChanges();
+                var result = await repo.CreateModuleAsync(module);
+            } catch (Exception e)
+            {
+
             }
         }
 
-        public List<Module> GetAllModules() {
-            return modules.ToList();
+        public async Task DeleteModule(string id) {
+            await repo.DeleteModuleAsync(id);
         }
 
-        public Module GetModule(string id) {
-
-            return modules.Where(m => m.ModuleId == id).FirstOrDefault(); 
+        public async Task<List<Module>> GetAllModules() {
+            return await repo.GetAllModuleAsync();
         }
 
-        public void UpdateModule(Module module) {
-            context.Entry(module).State = EntityState.Modified;
-            context.SaveChanges();
+        public async Task<Module> GetModule(string id) {
+
+            return await repo.GetModuleAsync(id); 
+        }
+
+        public async Task UpdateModule(Module module) {
+            await repo.UpdateModuleAsync(module.ModuleId, module);
         }
     }
 }

@@ -9,10 +9,10 @@ namespace Backend_Api.Repository {
      * Provides CRUD operations for the Course model.
      **/
     public interface ICourseRepository {
-        void CreateCourse(Course course);
-        void UpdateCourse(Course course);
-        Course GetCourse(string id);
-        List<Course> GetAllCourses();
-        void DeleteCourse(string id);
+        Task CreateCourse(Course course);
+        Task UpdateCourse(Course course);
+        Task<Course> GetCourse(string id);
+        Task<List<Course>> GetAllCoursesAsync();
+        Task DeleteCourseAsync(string id);
     }
 }

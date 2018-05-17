@@ -21,37 +21,37 @@ namespace Backend_Api.Controllers
 
         // GET module/
         [HttpGet]
-        public List<Module> Get()
+        public async Task<List<Module>> GetAsync()
         {
-            return repository.GetAllModules();
+            return await repository.GetAllModules();
         }
 
         // GET module/5
         [HttpGet("{id}")]
-        public Module Get(string id)
+        public async Task<Module> GetAsync(string id)
         {
-            return repository.GetModule(id);
+            return await repository.GetModule(id);
         }
 
         // POST module/
         [HttpPost]
-        public void Post([FromBody] Module module)
+        public async Task PostAsync([FromBody] Module module)
         {
-            repository.CreateModule(module);
+            await repository.CreateModule(module);
         }
 
         // PUT module/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Module module)
+        public async Task PutAsync(int id, [FromBody] Module module)
         {
-            repository.UpdateModule(module);
+            await repository.UpdateModule(module);
         }
 
         // DELETE module/5
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public async Task DeleteAsync(string id)
         {
-            repository.DeleteModule(id);
+            await repository.DeleteModule(id);
         }
     }
 }

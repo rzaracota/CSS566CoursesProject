@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Backend_Api.Repository;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,11 @@ namespace Backend_Api.Repo_Model {
         {
             CourseModules = new List<CourseModule>();
             Layout = new List<ModuleTextContent>();
+            Doctype = "Module";
         }
+
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; set; }
 
         [JsonProperty(PropertyName = "ModuleId")]
         public string ModuleId { get; set; }
@@ -25,9 +30,14 @@ namespace Backend_Api.Repo_Model {
         public string Author { get; set; }
 
         [JsonProperty(PropertyName = "CourseModule")]
+        [JsonConverter(typeof(SingleOrArrayConverter<CourseModule>))]
         public List<CourseModule> CourseModules { get; set; }
 
         [JsonProperty(PropertyName = "Layout")]
+        [JsonConverter(typeof(SingleOrArrayConverter<ModuleTextContent>))]
         public List<ModuleTextContent> Layout { get; set; }
+
+        [JsonProperty(PropertyName = "Doctype")]
+        public string Doctype { get; set; }
     }
 }

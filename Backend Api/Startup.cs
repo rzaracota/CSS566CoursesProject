@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Backend_Api.Repository;
+﻿using Backend_Api.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using Backend_Api.Repo_Model;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Backend_Api
 {
@@ -31,6 +26,13 @@ namespace Backend_Api
 
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<IModuleRepository, ModuleRepository>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "API", Description = "Swagger API" });
+                var xmlPath = System.AppDomain.CurrentDomain.BaseDirectory + @"Backend Api.xml";
+                c.IncludeXmlComments(xmlPath);
+            });
+                                   
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +44,13 @@ namespace Backend_Api
             }
 
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+           {
+               c.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
+           }
+                            );
         }
     }
 }

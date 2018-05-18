@@ -8,49 +8,50 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Backend_Api.Controllers
 {
-    [Route("api/[controller]")]
-    public class ValuesController : Controller
+    [Produces("application/json")]
+    [Route("module/")]
+    public class ModuleController : Controller
     {
-        private IModuleRepository moduleRepository;
+        private IModuleRepository repository;
 
-        public ValuesController(IModuleRepository moduleRepository)
+        public ModuleController(IModuleRepository r)
         {
-            this.moduleRepository = moduleRepository;
+            this.repository = r;
         }
 
-        // GET api/values
+        // GET module/
         [HttpGet]
         public async Task<List<Module>> GetAsync()
         {
-            return await moduleRepository.GetAllModules();
+            return await repository.GetAllModules();
         }
 
-        // GET api/values/5
+        // GET module/5
         [HttpGet("{id}")]
         public async Task<Module> GetAsync(string id)
         {
-            return await moduleRepository.GetModule(id);
+            return await repository.GetModule(id);
         }
 
-        // POST api/values
+        // POST module/
         [HttpPost]
         public async Task PostAsync([FromBody] Module module)
         {
-            await moduleRepository.CreateModule(module);
+            await repository.CreateModule(module);
         }
 
-        // PUT api/values/5
+        // PUT module/5
         [HttpPut("{id}")]
         public async Task PutAsync(int id, [FromBody] Module module)
         {
-            await moduleRepository.UpdateModule(module);
+            await repository.UpdateModule(module);
         }
 
-        // DELETE api/values/5
+        // DELETE module/5
         [HttpDelete("{id}")]
         public async Task DeleteAsync(string id)
         {
-            await moduleRepository.DeleteModule(id);
+            await repository.DeleteModule(id);
         }
     }
 }

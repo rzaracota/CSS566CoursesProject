@@ -11,10 +11,10 @@ namespace Backend_Api.Repository
 {
     public class DocDBRepo: IDocDBRepo
     {
-        private static readonly string DatabaseID = "ToDoList";//generally write in config file- SHMA_CRUD id db name
-        private static readonly string CollectionID = "Items";
-        private static readonly string AzureEndPoint = "https://test1112233.documents.azure.com:443/"; //URI from Key section in Azure cosmos DB setup
-        private static readonly string AzureAuthKey = "6JPkHnSrqH0PKRzA5sCxOkF5VQzvHVSWS6ywrETkmBRounoDjqtUdSPMkZVHuYJRkKwBr2xmS4rO6jy1IACBYg=="; //Azure primary key from key section COSMOS DB- primary key values
+        private static readonly string DatabaseID = "css566";//generally write in config file- SHMA_CRUD id db name
+        private static readonly string CollectionID = "items";
+        private static readonly string AzureEndPoint = "https://css566.documents.azure.com:443/"; //URI from Key section in Azure cosmos DB setup
+        private static readonly string AzureAuthKey = "f3wRntz9c5DuuTd3aLY4M4BE9Vz82tKVC4WNaAVXuF3BCwdsiIdWmIJm7mlHpYscYWdpJcsSTv9JVZMk3BsK0A=="; //Azure primary key from key section COSMOS DB- primary key values
         private static DocumentClient client; //DocumentDB package 
 
         //Client Initialization

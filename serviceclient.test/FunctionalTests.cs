@@ -37,5 +37,39 @@ namespace serviceclient.test
 
             Assert.NotNull(modules[0].Title);
         }
+
+        [Fact]
+        public void GetIdReturnsValidModule()
+        {
+            var modules = client.Get();
+
+            Assert.NotEmpty(modules);
+
+            var author = modules[0].Author;
+
+            var title = modules[0].Title;
+
+            var module = client.Get(modules[0].Id);
+
+            Assert.NotNull(module);
+
+            Assert.Equal(author, module.Author);
+            Assert.Equal(title, module.Title);
+        }
+
+        [Fact]
+        public void SubmoduleInfoIsPopulatedCorrectly()
+        {
+            var modules = client.Get();
+
+            Assert.NotEmpty(modules);
+
+            var module = modules[0];
+
+            Assert.NotNull(module.CourseModule);
+
+            Assert.True(module.CourseModule.ModuleId >= 0);
+            Assert.True(module.CourseModule.CourseId >= 0);
+        }
     }
 }

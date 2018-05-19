@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 namespace serviceclient.types {
     [DataContract]
     public class Module {
-        [DataMember]
+        [DataMember(Name = "id")]
         public string Id { get; set; }
 
         [DataMember]
@@ -14,5 +14,8 @@ namespace serviceclient.types {
 
         [DataMember]
         public string Author { get; set; }
+
+        [DataMember]
+        public CourseModule CourseModule { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Json;
 
 namespace serviceclient
 {
-    public class ServiceClient<T>
+    public class ServiceClient<T> where T : class
     {
         private static HttpClient client = new HttpClient();
 
@@ -39,6 +39,13 @@ namespace serviceclient
             var result = listSerializer.ReadObject(stream) as List<T>;
 
             return result;
+        }
+
+        public T Get(string id)
+        {
+            var stream = client.GetStreamAsync(Endpoint + $@"/{id}").Result;
+
+            return objectSerializer.ReadObject(stream) as T;
         }
     }
 }

@@ -10,6 +10,9 @@ namespace serviceclient.types {
         public int ModuleId { get; set; }
 
         [DataMember]
+        public string Title { get; set; }
+
+        [DataMember]
         public string Author { get; set; }
     }
 }

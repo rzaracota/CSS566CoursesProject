@@ -32,9 +32,9 @@ namespace Backend_Api.Controllers
         /// </summary>
         /// <returns>A List of all modules</returns>
         [HttpGet]
-        public List<Module> Get()
+        public async Task<List<Module>> GetAsync()
         {
-            return repository.GetAllModules();
+            return await repository.GetAllModules();
         }
 
         // GET module/5
@@ -44,9 +44,9 @@ namespace Backend_Api.Controllers
         /// <returns>a module</returns>
         /// <param name="id">Identifier.</param>
         [HttpGet("{id}")]
-        public Module Get(string id)
+        public async Task<Module> GetAsync(string id)
         {
-            return repository.GetModule(id);
+            return await repository.GetModule(id);
         }
 
         // POST module/
@@ -56,9 +56,9 @@ namespace Backend_Api.Controllers
         /// <returns>void</returns>
         /// <param name="module">Module.</param>
         [HttpPost]
-        public void Post([FromBody] Module module)
+        public async Task PostAsync([FromBody] Module module)
         {
-            repository.CreateModule(module);
+            await repository.CreateModule(module);
         }
 
         // PUT module/5
@@ -69,9 +69,9 @@ namespace Backend_Api.Controllers
         /// <param name="id">Identifier.</param>
         /// <param name="module">Module.</param>
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Module module)
+        public async Task PutAsync(int id, [FromBody] Module module)
         {
-            repository.UpdateModule(module);
+            await repository.UpdateModule(module);
         }
 
         // DELETE module/5
@@ -81,9 +81,9 @@ namespace Backend_Api.Controllers
         /// <returns>void</returns>
         /// <param name="id">Identifier.</param>
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public async Task DeleteAsync(string id)
         {
-            repository.DeleteModule(id);
+            await repository.DeleteModule(id);
         }
     }
 }

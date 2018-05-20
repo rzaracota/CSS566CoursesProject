@@ -12,13 +12,8 @@ namespace Backend_Api.Repo_Model {
         [JsonProperty(PropertyName = "CourseId")]
         public string CourseId { get; set; }
 
-        [JsonProperty(PropertyName = "Course")]
-        public Course Course { get; set; }
-
         [JsonProperty(PropertyName = "ModuleId")]
         public string ModuleId { get; set; }
 
-        [JsonProperty(PropertyName = "Module")]
-        public Module Module { get; set; }
     }
 }

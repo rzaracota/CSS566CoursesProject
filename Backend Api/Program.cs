@@ -42,9 +42,7 @@ namespace Backend_Api
             CourseModule courseModule1 = new CourseModule
             {
                 CourseId = course1.CourseId,
-                Course = course1,
                 ModuleId = module1.ModuleId,
-                Module = module1
             };
 
             course1.CourseModules.Add(courseModule1);
@@ -77,6 +75,7 @@ namespace Backend_Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights()
                 .UseStartup<Startup>()
                 .Build();
     }

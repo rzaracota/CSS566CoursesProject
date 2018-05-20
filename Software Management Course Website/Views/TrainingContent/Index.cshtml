@@ -1,0 +1,260 @@
+﻿<head>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap table of contents plugin -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+
+    @*<style>
+			/*
+				Follows example of static navbar from:
+				https://github.com/afeld/bootstrap-toc/blob/v0.4.1/index.md#usage
+			*/
+			nav[data-toggle='toc'] {
+			  margin-top: 30px;
+			}
+        /*
+			@media (max-width: 768px) {
+			  nav.affix[data-toggle='toc'] {
+				position: static;
+			  }*/
+
+			  /* don't expand nested items, which pushes down the rest of the page when navigating */
+			  nav[data-toggle='toc'] .nav .active .nav {
+				display: none;
+			  }
+			}
+
+    </style>*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#quiz").submit(function (e) {
+                // validate the user's answers
+                var totalCorrect = 0;
+                var expectedIndicies = [1, 2, 3, 1];
+                var total = expectedIndicies.length;
+
+                for (var i = 0; i < expectedIndicies.length; i++) {
+                    var id = "input[name=practice" + (i + 1) + "]:checked";
+                    var userIndex = parseInt($(this).find(id).val());
+
+                    if (expectedIndicies[i] == userIndex) {
+                        totalCorrect += 1;
+                    }
+                }
+
+                if (totalCorrect !== total) {
+                    alert(totalCorrect
+                        + "/"
+                        + total
+                        + " correct, please try again");
+                } else {
+                    alert(totalCorrect
+                        + "/"
+                        + total
+                        + " correct, good job!");
+                }
+
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <title>Agile Game Development with Scrum - Clinton Keith</title>
+</head>
+<body data-spy="scroll" data-target="#toc">
+    <!-- Create a static navbar as shown here:
+        https://github.com/afeld/bootstrap-toc/blob/v0.4.1/index.md#usage
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <nav id="toc" data-spy="affix" data-toggle="toc">
+                    <a href="https://www.amazon.com/Agile-Development-Scrum-Addison-Wesley-Signature/dp/0321618521">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51WUs1alpJL._SX382_BO1,204,203,200_.jpg"
+                             style="width: 40%; height: 40%;"
+                             alt="Agile Game Development with Scrum" />
+                    </a>
+                </nav>
+
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h1>Literature Module</h1>
+                        <h3><em>Agile Game Development with Scrum</em></h3>
+                        <p>
+                            Deliver Better Games Faster, On Budget—And Make Game Development Fun Again!
+                        </p>
+                        <p>
+                            Game development is in crisis: facing bloated budgets, impossible schedules, unmanageable complexity, and death march overtime. It’s no wonder so many development studios are struggling to survive. 
+                            Fortunately, there is a solution. Scrum and Agile methods are already revolutionizing development outside the game industry. Now, the author discusses exactly how to successfully apply these methods to the unique challenges of game development.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>The Problem</h1>
+                            <p>
+                                The game industry has several unique challenges:
+                            </p>
+                            <ul>
+                                <li>Games take several years to complete</li>
+                                <li>Team size is often ~100+</li>
+                                <li>Waterfall development model is prevalent in the industry and it doesn’t scale</li>
+                            </ul>
+                            <p>
+                                This has led to a Crisis:
+                            </p>
+                            <ul>
+                                <li>Projects go over budget (budgets can be tens of millions of dollars). GTA V cost $265M to make!</li>
+                                <li>Projects do not stay on schedule</li>
+                                <li>Most games are not profitable</li>
+                                <li>Lack of innovation</li>
+                                <li>Deteriorating work environment for developers</li>
+                                <li>Class action lawsuits against EA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>Some well known game companies</h1>
+                            <img src="images/Slide4.jpg"
+                                 alt="Some well known game development companies"
+                                 style="width: 75%; height: 75%;" />
+                            @*<p>
+                    One of the challenges of operating in an agile development cycle is effective sprint planning. Ideally when the spring begins, the sprint tasks are well defined and are in manageable sizes.
+                </p>
+                <p>
+                    If tasks are too big in size, or the size of the task is underestimated, then the task can disrupt of the flow of other work required for the sprint. This could potentially lead to work that needs to span multiple sprints, and even delayed deliveries.
+                </p>
+                <p>
+                    As a general rule, sprint tasks should be broken down into sizes of no longer than 4 hours. Tasks larger than this should be re-evaluated to understand if they can be decomposed.
+                </p>*@
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>Applying Agile and Scrum</h1>
+                            <img src="images/Slide10.jpg"
+                                 alt="Key Agile principles"
+                                 style="width: 75%; height: 75%;" />
+                            <br />
+                            <p>
+                                Individuals and interactions over processes and tools
+                                <br />
+                                <img src="images/Slide12.jpg"
+                                     alt="Key Agile principles"
+                                     style="width: 75%; height: 75%;" />
+                            </p>
+                            <p>
+                                Working software over comprehensive documentation
+                                <br />
+                                <img src="images/Slide15.jpg"
+                                     alt="Key Agile principles"
+                                     style="width: 75%; height: 75%;" />
+                            </p>
+                            <p>
+                                Customer collaboration over contract negotiation
+                                <br />
+                                <img src="images/Slide13.jpg"
+                                     alt="Key Agile principles"
+                                     style="width: 75%; height: 75%;" />
+                            </p>
+                            <p>
+                                Responding to change over following a plan
+                                <br />
+                                <br />
+                                <img src="images/Slide14.jpg"
+                                     alt="Key Agile principles"
+                                     style="width: 75%; height: 75%;" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>Overall Scrum based flow</h1>
+                            <img src="images/Slide17.jpg"
+                                 alt="Scrum based flow overview"
+                                 style="width: 75%; height: 75%;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>Concluding comments</h1>
+                            <p>
+                                The challenge of applying agile isn’t in merely adopting the practices. The practices are simple. The real challenge arises in the collision between the culture of a studio, their publisher, and agile.
+                            </p>
+                            <p>
+                                Agile methodologies such as Scrum create transparency. Every deficiency that obstructs the best flow of work is singled out for examination. Rather than putting faith in a design document, a game needs to stand on its own merit every iteration.
+                            </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h1>Quiz</h1>
+                        <p>Test your knowledge of the Agile Game Development with Scrum module!</p>
+                        <form id="quiz" action="#">
+                            <div class="form-group">
+                                <label for="practice1">Which of these <em>doesn't</em> contribute to problems in game development domain?</label><br />
+                                <label class="radio-inline"><input type="radio" value="0" name="practice1">Game development is a one man operation</label><br />
+                                <label class="radio-inline"><input type="radio" value="1" name="practice1">Games take several years to complete </label><br />
+                                <label class="radio-inline"><input type="radio" value="2" name="practice1">Waterfall development model is prevalent in the industry and it doesn’t scale</label><br />
+                            </div>
+                            <div class="form-group">
+                                <label for="practice2">What are the four key Agile principles?</label><br />
+                                <label class="radio-inline"><input type="radio" value="0" name="practice2">Individuals and interactions over processes and tools</label><br />
+                                <label class="radio-inline"><input type="radio" value="1" name="practice2">Working software over comprehensive documentation</label><br />
+                                <label class="radio-inline"><input type="radio" value="2" name="practice2">Customer collaboration over contract negotiation</label><br />
+                                <label class="radio-inline"><input type="radio" value="3" name="practice2">Responding to change over following a plan</label><br />
+                                <label class="radio-inline"><input type="radio" value="4" name="practice2">All of the above</label><br />
+                            </div>
+                            <div class="form-group">
+                                <label for="practice2">What is a challenge that comes in the way of applying agile game development?</label><br />
+                                <label class="radio-inline"><input type="radio" value="0" name="practice3">Adopting the practices is impossible</label><br />
+                                <label class="radio-inline"><input type="radio" value="1" name="practice3">Agile principles often clash with the existing culture in studios</label><br />
+                                <label class="radio-inline"><input type="radio" value="2" name="practice3">Agile practices encourage opacity</label><br />
+                                <label class="radio-inline"><input type="radio" value="3" name="practice3">All of the above</label><br />
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h1>References</h1>
+                        <p>
+                            Keith, Clinton. Agile Game Development with Scrum. Addison-Wesley Professional, May 2010, ISBN: 9780321670311
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h1>Related Modules</h1>
+                        <ul>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

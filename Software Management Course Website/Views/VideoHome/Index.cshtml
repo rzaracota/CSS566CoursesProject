@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Video Tutorials List";
+}
+
+<h2>Available Video Tutorials</h2>
+
+@*<p>Hello from our View Template!</p>*@
+
+@model Dictionary<string, string>
+@if (Model == null || Model.Keys.Count < 1)
+{
+    <strong>Sorry, no videos are available at this time :(</strong>
+}
+else
+{
+
+    @foreach (var element in Model)
+    {
+        @*<p>
+                <a href="@element.Value">@element.Key</a>
+            </p>*@
+        @*<p>@Html.DisplayFor(m => element.Key) </p>*@
+
+        <p>
+            <h4>@element.Key</h4>
+            <br />
+            <iframe width="560"
+                    height="315"
+                    src=@element.Value
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+        </p>
+        <br />
+        <br />
+    }
+    @Model
+}

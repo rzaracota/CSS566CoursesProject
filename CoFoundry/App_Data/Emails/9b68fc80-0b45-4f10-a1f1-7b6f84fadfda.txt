@@ -1,0 +1,41 @@
+To: Ioana Preda(for_IoanaPreda@hotmail.com)
+From: auto@simpletestsample.org
+Subject: Welcome to Cofoundry
+
+=============== HTML ===============
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    
+
+<h2>Hi Ioana</h2>
+
+<p>
+    An account has been created for you on Cofoundry. Please use your e-mail as your login.
+    Your temporary password is: c9gPC67jKU 
+</p>
+<p>
+    Login <a href="http://localhost:60932/admin">here</a>
+</p>
+
+<p>
+    Thanks,<br />
+    Cofoundry
+</p>
+</body>
+</html>
+
+=============== TEXT ===============
+
+Hi Ioana
+
+An account has been created for you on Cofoundry. Please use your e-mail as your login.
+Your temporary password is: c9gPC67jKU
+
+Login here: http://localhost:60932/admin
+
+
+Thanks,
+Cofoundry

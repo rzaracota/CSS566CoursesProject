@@ -32,9 +32,9 @@ namespace Backend_Api.Controllers
         /// </summary>
         /// <returns>A List of all modules</returns>
         [HttpGet]
-        public async Task<List<Module>> GetAsync()
+        public List<ModuleApi> GetAsync()
         {
-            return await repository.GetAllModules();
+            return repository.GetAllModules();
         }
 
         // GET module/5
@@ -44,9 +44,9 @@ namespace Backend_Api.Controllers
         /// <returns>a module</returns>
         /// <param name="id">Identifier.</param>
         [HttpGet("{id}")]
-        public async Task<Module> GetAsync(string id)
+        public ModuleApi GetAsync(string id)
         {
-            return await repository.GetModule(id);
+            return repository.GetModule(id);
         }
 
         // POST module/
@@ -56,7 +56,7 @@ namespace Backend_Api.Controllers
         /// <returns>void</returns>
         /// <param name="module">Module.</param>
         [HttpPost]
-        public async Task PostAsync([FromBody] Module module)
+        public async Task PostAsync([FromBody] ModuleApi module)
         {
             await repository.CreateModule(module);
         }
@@ -69,7 +69,7 @@ namespace Backend_Api.Controllers
         /// <param name="id">Identifier.</param>
         /// <param name="module">Module.</param>
         [HttpPut("{id}")]
-        public async Task PutAsync(int id, [FromBody] Module module)
+        public async Task PutAsync(int id, [FromBody] ModuleApi module)
         {
             await repository.UpdateModule(module);
         }

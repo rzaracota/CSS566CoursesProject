@@ -25,7 +25,7 @@ namespace Backend_Api
                 ModuleIds = new List<string> { "987" }
             };
 
-            Module module1 = new Module
+            ModuleApi module1 = new ModuleApi
             {
                 ModuleId = "987",
                 Author = "John Doe",

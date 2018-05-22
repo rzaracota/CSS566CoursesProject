@@ -22,10 +22,33 @@ namespace Backend_Api.Repository {
             this.repo.Initialize();
         }
 
-        public async Task CreateModule(Module module) {
+        public Module ConvertModuleApiToModule(ModuleApi api)
+        {
+            Module dataModel = new Module();
+            dataModel.Author = api.Author;
+            dataModel.CourseIds = api.CourseIds;
+            dataModel.Layout = api.Layout;
+            dataModel.Title = api.Title;
+            dataModel.ModuleId = api.ModuleId;
+            return dataModel;
+        }
+
+        public ModuleApi ConvertModuleToModuleApi(Module dataModel)
+        {
+            ModuleApi api = new ModuleApi();
+            api.Author = dataModel.Author;
+            api.CourseIds = dataModel.CourseIds;
+            api.Layout = dataModel.Layout;
+            api.Title = dataModel.Title;
+            api.ModuleId = dataModel.ModuleId;
+            return api;
+        }
+
+        public async Task CreateModule(ModuleApi module) {
             try
             {
-                var result = await repo.CreateModuleAsync(module);
+                var result = await repo.CreateModuleAsync(
+                    ConvertModuleApiToModule(module));
             } catch (Exception e)
             {
 
@@ -36,17 +59,25 @@ namespace Backend_Api.Repository {
             await repo.DeleteModuleAsync(id);
         }
 
-        public async Task<List<Module>> GetAllModules() {
-            return await repo.GetAllModuleAsync();
+        public List<ModuleApi> GetAllModules() {
+            List<Module> dataModels = repo.GetAllModuleAsync().Result;
+            List<ModuleApi> apis = new List<ModuleApi>();
+            foreach (Module dataModel in dataModels)
+            {
+                apis.Add(ConvertModuleToModuleApi(dataModel));
+            }
+            return apis;
         }
 
-        public async Task<Module> GetModule(string id) {
+        public ModuleApi GetModule(string id) {
 
-            return await repo.GetModuleAsync(id); 
+            return ConvertModuleToModuleApi(repo.GetModuleAsync(id).Result); 
         }
 
-        public async Task UpdateModule(Module module) {
-            await repo.UpdateModuleAsync(module.ModuleId, module);
+        public async Task UpdateModule(ModuleApi api) {
+            await repo.UpdateModuleAsync(
+                api.ModuleId, 
+                ConvertModuleApiToModule(api));
         }
     }
 }

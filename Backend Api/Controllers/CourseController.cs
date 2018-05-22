@@ -34,9 +34,9 @@ namespace Backend_Api.Controllers
         /// </summary>
         /// <returns>The get.</returns>
         [HttpGet]
-        public async Task<List<Course>> GetAsync()
+        public List<CourseApi> Get()
         {
-            return await repository.GetAllCoursesAsync();
+            return repository.GetAllCourses();
         }
 
         // GET course/5
@@ -46,9 +46,9 @@ namespace Backend_Api.Controllers
         /// <returns>the course</returns>
         /// <param name="id">Identifier.</param>
         [HttpGet("{id}")]
-        public async Task<Course> GetAsync(string id)
+        public CourseApi Get(string id)
         {
-            return await repository.GetCourse(id);
+            return repository.GetCourse(id);
         }
 
 
@@ -59,7 +59,7 @@ namespace Backend_Api.Controllers
         /// <returns>void</returns>
         /// <param name="course">Course.</param>
         [HttpPost]
-        public async Task PostAsync([FromBody] Course course)
+        public async Task PostAsync([FromBody] CourseApi course)
         {
             await repository.CreateCourse(course);
         }
@@ -74,7 +74,7 @@ namespace Backend_Api.Controllers
         /// <param name="id">Identifier.</param>
         /// <param name="course">Course.</param>
         [HttpPut("{id}")]
-        public async Task PutAsync(int id, [FromBody] Course course)
+        public async Task PutAsync(int id, [FromBody] CourseApi course)
         {
             await repository.UpdateCourse(course);
         }

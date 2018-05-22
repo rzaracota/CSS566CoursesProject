@@ -9,10 +9,10 @@ namespace Backend_Api.Repository {
      * Provides CRUD operations for the Module model.
      **/
     public interface IModuleRepository {
-        Task CreateModule(Module module);
-        Task UpdateModule(Module module);
-        Task<Module> GetModule(string id);
-        Task<List<Module>> GetAllModules();
+        Task CreateModule(ModuleApi module);
+        Task UpdateModule(ModuleApi module);
+        ModuleApi GetModule(string id);
+        List<ModuleApi> GetAllModules();
         Task DeleteModule(string id);
     }
 }

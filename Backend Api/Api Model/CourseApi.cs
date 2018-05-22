@@ -10,16 +10,20 @@ namespace Backend_Api.Repo_Model {
      * A course which contains a sequence of modules to be
      * completed.
      **/
-    public class Course {
-        public Course()
+    public class CourseApi
+    {
+        public CourseApi()
         {
-            Doctype = "Course";
+            ModuleIds = new List<string>();
         }
-       
-        public string Id { get; set; }
+
+        [JsonProperty(PropertyName = "CourseId")]
         public string CourseId { get; set; }
+
+        [JsonProperty(PropertyName = "Name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "ModuleIds")]
         public List<string> ModuleIds { get; set; }
-        public string Doctype { get; set; }
     }
 }

@@ -18,10 +18,30 @@ namespace Backend_Api.Repository {
             this.repo.Initialize();
         }
 
-        public async Task CreateCourse(Course course) {
+        private CourseApi ConvertCourseToCourseApi(Course course)
+        {
+            CourseApi apiResult = new CourseApi();
+            apiResult.CourseId = course.CourseId;
+            apiResult.ModuleIds = course.ModuleIds;
+            apiResult.Name = course.Name;
+            return apiResult;
+        }
+
+        private Course ConvertCourseApiToCourse(CourseApi api)
+        {
+            Course dataModel = new Course();
+            dataModel.CourseId = api.CourseId;
+            dataModel.ModuleIds = api.ModuleIds;
+            dataModel.Name = api.Name;
+            return dataModel;
+        }
+
+        public async Task CreateCourse(CourseApi api) {
+            // convert API to datamodel
+            Course dataModel = ConvertCourseApiToCourse(api);
             try
             {
-                var result = await repo.CreateCourseAsync(course);
+                var result = await repo.CreateCourseAsync(dataModel);
             } catch (Exception e)
             {
 
@@ -32,16 +52,25 @@ namespace Backend_Api.Repository {
             await repo.DeleteCourseAsync(id);
         }
 
-        public async Task<List<Course>> GetAllCoursesAsync() {
-            return await repo.GetAllCourseAsync();
+        public List<CourseApi> GetAllCourses() {
+            List<Course> dataModels =  repo.GetAllCourseAsync().Result;
+            List<CourseApi> courseApis = new List<CourseApi>();
+
+            foreach (Course dataModel in dataModels)
+            {
+                courseApis.Add(ConvertCourseToCourseApi(dataModel));
+            }
+
+            return courseApis;
         }
 
-        public async Task<Course> GetCourse(string id) {
-            return await repo.GetCourseAsync(id);
+        public CourseApi GetCourse(string id) {
+            return ConvertCourseToCourseApi(repo.GetCourseAsync(id).Result);
         }
 
-        public async Task UpdateCourse(Course course) {
-            await repo.UpdateCourseAsync(course.CourseId, course);
+        public async Task UpdateCourse(CourseApi api) {
+            Course dataModel = ConvertCourseApiToCourse(api);
+            await repo.UpdateCourseAsync(dataModel.CourseId, dataModel);
         }
     }
 }

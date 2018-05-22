@@ -18,35 +18,42 @@ namespace Backend_Api
         public static void Main(string[] args)
         {
             // add initial fake data for testing
-            Course course1 = new Course
+            CourseApi course1 = new CourseApi
             {
                 CourseId = "1",
                 Name = "John Doe's course",
+                ModuleIds = new List<string> { "987" }
             };
 
-            Module module1 = new Module
+            ModuleApi module1 = new ModuleApi
             {
-                ModuleId = "123",
+                ModuleId = "987",
                 Author = "John Doe",
                 Title = "Agile Development",
-                Layout = new List<ModuleTextContent>
+                CourseIds = new List<string> { "1" },
+                Layout = new List<ModuleBaseContent>
                 {
                     new ModuleTextContent
                     {
                         Heading = "Motivation for Agile",
                         Text = "This is why we want to do Agile"
+                    },
+                    new ModuleImageContent
+                    {
+                        Link = "MyImageLink",
+                        Caption = "MyImageCaption"
+                    },
+                    new ModuleVideoContent
+                    {
+                        Link = "MyVideoLink",
+                        Caption = "MyVideoCaption"
+                    },
+                    new ModuleQuizContent
+                    {
+                        Link = "MyQuizLink"
                     }
                 }
             };
-
-            CourseModule courseModule1 = new CourseModule
-            {
-                CourseId = course1.CourseId,
-                ModuleId = module1.ModuleId,
-            };
-
-            course1.CourseModules.Add(courseModule1);
-            module1.CourseModules.Add(courseModule1);
 
             var host = BuildWebHost(args);
 

@@ -26,15 +26,29 @@ namespace Backend_Api
 
             Module module1 = new Module
             {
-                ModuleId = "123",
+                ModuleId = "987",
                 Author = "John Doe",
                 Title = "Agile Development",
-                Layout = new List<ModuleTextContent>
+                Layout = new List<ModuleBaseContent>
                 {
                     new ModuleTextContent
                     {
                         Heading = "Motivation for Agile",
                         Text = "This is why we want to do Agile"
+                    },
+                    new ModuleImageContent
+                    {
+                        Link = "MyImageLink",
+                        Caption = "MyImageCaption"
+                    },
+                    new ModuleVideoContent
+                    {
+                        Link = "MyVideoLink",
+                        Caption = "MyVideoCaption"
+                    },
+                    new ModuleQuizContent
+                    {
+                        Link = "MyQuizLink"
                     }
                 }
             };

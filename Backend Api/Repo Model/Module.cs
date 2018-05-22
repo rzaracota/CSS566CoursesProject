@@ -13,7 +13,7 @@ namespace Backend_Api.Repo_Model {
         public Module()
         {
             CourseModules = new List<CourseModule>();
-            Layout = new List<ModuleTextContent>();
+            Layout = new List<ModuleBaseContent>();
             Doctype = "Module";
         }
 
@@ -34,8 +34,8 @@ namespace Backend_Api.Repo_Model {
         public List<CourseModule> CourseModules { get; set; }
 
         [JsonProperty(PropertyName = "Layout")]
-        [JsonConverter(typeof(SingleOrArrayConverter<ModuleTextContent>))]
-        public List<ModuleTextContent> Layout { get; set; }
+        [JsonConverter(typeof(ModuleBaseTypeConverter))]
+        public List<ModuleBaseContent> Layout { get; set; }
 
         [JsonProperty(PropertyName = "Doctype")]
         public string Doctype { get; set; }

@@ -10,7 +10,6 @@
     <DocumentationFile>bin\Debug\netcoreapp2.0\Backend Api.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Api Model\" />
     <Folder Include="Provider\" />
   </ItemGroup>
 

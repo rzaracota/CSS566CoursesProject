@@ -18,7 +18,7 @@ namespace Backend_Api
         public static void Main(string[] args)
         {
             // add initial fake data for testing
-            Course course1 = new Course
+            CourseApi course1 = new CourseApi
             {
                 CourseId = "1",
                 Name = "John Doe's course",

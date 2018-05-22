@@ -36,7 +36,7 @@ namespace Backend_Api.Repo_Model {
         [JsonConverter(typeof(ModuleBaseTypeConverter))]
         public List<ModuleBaseContent> Layout { get; set; }
 
-        [JsonProperty(PropertyName = "Doctype")]
+        [JsonIgnore]
         public string Doctype { get; set; }
     }
 }

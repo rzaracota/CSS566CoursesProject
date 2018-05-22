@@ -29,7 +29,7 @@ namespace Backend_Api.Repo_Model {
         [JsonProperty(PropertyName = "ModuleIds")]
         public List<string> ModuleIds { get; set; }
 
-        [JsonProperty(PropertyName = "Doctype")]
+        [JsonIgnore]
         public string Doctype { get; set; }
     }
 }

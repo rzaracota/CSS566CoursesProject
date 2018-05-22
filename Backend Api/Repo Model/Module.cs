@@ -17,7 +17,7 @@ namespace Backend_Api.Repo_Model {
             Doctype = "Module";
         }
 
-        [JsonProperty(PropertyName = "id")]
+        [JsonIgnore]
         public string Id { get; set; }
 
         [JsonProperty(PropertyName = "ModuleId")]

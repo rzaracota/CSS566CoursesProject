@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model ModuleModel
+<br>
+<div id="module-nav" class="row">       
+    <a class="col-xs-6" asp-area="" asp-controller="Home" asp-action="Module" asp-route-id="-1">Previous</a>
+    <a class="col-xs-6" style="text-align:right" asp-area="" asp-controller="Home" asp-action="Module" asp-route-id="1">Next</a>
+</div>
+
+<h2>@Model.Title</h2>
+
+@Html.Raw(Model.HtmlContent)

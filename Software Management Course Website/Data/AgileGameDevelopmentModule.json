@@ -1,0 +1,103 @@
+{
+  
+  "Module": {
+    "ID": 1,
+    "Title": "Agile Game Development with Scrum",
+    "Author": "Navjodh S. Dhillon",
+    "Courses": [ "Course A", "Course B" ],
+    "Layout": [
+      {
+        "heading": "Agile Game Development with Scrum Book",
+        "type": "image",
+        "link": "https://images-na.ssl-images-amazon.com/images/I/51WUs1alpJL._SX382_BO1,204,203,200_.jpg",
+        "caption": "Deliver Better Games Faster, On Budget—And Make Game Development Fun Again!"
+      },
+      {
+        "heading": "Agile Game Development with Scrum",
+        "type": "text",
+        "text": "Game development is in crisis: facing bloated budgets, impossible schedules, unmanageable complexity, and death march overtime. It’s no wonder so many development studios are struggling to survive. Fortunately, there is a solution. Scrum and Agile methods are already revolutionizing development outside the game industry. Now, the author discusses exactly how to successfully apply these methods to the unique challenges of game development."
+      },
+      {
+        "heading": "The Problem",
+        "type": "text",
+        "text": "<p> The game industry has several unique challenges: </p>                             <ul>                                 <li>Games take several years to complete</li>                                 <li>Team size is often ~100+</li>                                 <li>Waterfall development model is prevalent in the industry and it doesn’t scale</li>                             </ul>                             <p>                                 This has led to a Crisis:                             </p>                             <ul>                                 <li>Projects go over budget (budgets can be tens of millions of dollars). GTA V cost $265M to make!</li>                                 <li>Projects do not stay on schedule</li>                                 <li>Most games are not profitable</li>                                 <li>Lack of innovation</li>                                 <li>Deteriorating work environment for developers</li>                                 <li>Class action lawsuits against EA</li>                             </ul>"
+      },
+      {
+        "heading": "Some well known game development companies",
+        "type": "image",
+        "link": "images/Slide4.jpg",
+        "caption": "Logos of some well known game development companies"
+      },
+      {
+        "heading": "Applying Agile and Scrum to Game Development",
+        "type": "image",
+        "link": "images/Slide10.jpg",
+        "caption": "Key Agile Principles."
+      },
+      {
+        "heading": "Applying Agile and Scrum to Game Development",
+        "type": "image",
+        "link": "images/Slide12.jpg",
+        "caption": "Individuals and interactions over processes and tools"
+      },
+      {
+        "heading": "Applying Agile and Scrum to Game Development",
+        "type": "image",
+        "link": "images/Slide15.jpg",
+        "caption": "Working software over comprehensive documentation"
+      },
+      {
+        "heading": "Applying Agile and Scrum to Game Development",
+        "type": "image",
+        "link": "images/Slide13.jpg",
+        "caption": "Customer collaboration over contract negotiation"
+      },
+      {
+        "heading": "Applying Agile and Scrum to Game Development",
+        "type": "image",
+        "link": "images/Slide14.jpg",
+        "caption": "Responding to change over following a plan"
+      },
+      {
+        "heading": "Overall Scrum based flow",
+        "type": "image",
+        "link": "images/Slide17.jpg",
+        "caption": "Scrum based flow overview"
+      },
+      {
+        "heading": "What Is Agile Video Game Development?",
+        "type": "video",
+        "link": "https://www.youtube.com/embed/cCKgtwXBl10"
+      },
+      {
+        "heading": "Agile Video Game Development Slides",
+        "type": "slideset",
+        "link": "https://uwnetid-my.sharepoint.com/personal/navjodh_uw_edu/_layouts/15/WopiFrame.aspx?sourcedoc={5518340f-5fb5-4a78-82eb-3fe7c72703e0}&action=embedview&wdAr=1.3333333333333332"
+      },
+      {
+        "heading": "An example of a custom website element",
+        "type": "custom",
+        "link": "<iframe src='https://cloudgames.com/games/html5/galaxy-battle-new-en-s-iga-cloud/index.html?pub=10' name='cloudgames-com' width='772' height='435' frameborder='0' scrolling='no'></iframe>"
+      },
+      {
+        "heading": "Concluding comments",
+        "type": "text",
+        "text": "<p>                                 The challenge of applying agile isn’t in merely adopting the practices. The practices are simple. The real challenge arises in the collision between the culture of a studio, their publisher, and agile.                             </p>                             <p>                                 Agile methodologies such as Scrum create transparency. Every deficiency that obstructs the best flow of work is singled out for examination. Rather than putting faith in a design document, a game needs to stand on its own merit every iteration.                             </p>"
+      },
+      {
+        "heading": "References",
+        "type": "text",
+        "text": "Keith, Clinton. Agile Game Development with Scrum. Addison-Wesley Professional, May 2010, ISBN: 9780321670311"
+      },
+      {
+        "heading": "Agile Game Development with Scrum Quiz",
+        "type": "quiz",
+        "link": "NA"
+      }
+    ]
+  }
+}
+
+
+
+

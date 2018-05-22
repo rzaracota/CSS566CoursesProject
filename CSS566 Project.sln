@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module API", "Module API\Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courses API", "Courses API\Courses API.csproj", "{B584C53E-3047-4EB8-BEE0-5834FBBA34F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Samples.SimpleSite", "..\Cofoundry.Samples.SimpleSite-master\Cofoundry.Samples.SimpleSite-master\src\Cofoundry.Samples.SimpleSite\Cofoundry.Samples.SimpleSite.csproj", "{5D0A93C8-4521-4DCB-B9AE-92E7BB9A5BAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Samples.SimpleSite", "Cofoundry.Samples.SimpleSite\Cofoundry.Samples.SimpleSite.csproj", "{5D0A93C8-4521-4DCB-B9AE-92E7BB9A5BAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

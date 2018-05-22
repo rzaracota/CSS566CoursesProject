@@ -13,7 +13,7 @@ namespace Backend_Api.Repo_Model {
     public class Course {
         public Course()
         {
-            CourseModules = new List<CourseModule>();
+            ModuleIds = new List<string>();
             Doctype = "Course";
         }
 
@@ -26,9 +26,8 @@ namespace Backend_Api.Repo_Model {
         [JsonProperty(PropertyName = "Name")]
         public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "CourseModules")]
-        [JsonConverter(typeof(SingleOrArrayConverter<CourseModule>))]
-        public List<CourseModule> CourseModules { get; set; }
+        [JsonProperty(PropertyName = "ModuleIds")]
+        public List<string> ModuleIds { get; set; }
 
         [JsonProperty(PropertyName = "Doctype")]
         public string Doctype { get; set; }

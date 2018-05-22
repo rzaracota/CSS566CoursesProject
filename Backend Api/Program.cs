@@ -22,6 +22,7 @@ namespace Backend_Api
             {
                 CourseId = "1",
                 Name = "John Doe's course",
+                ModuleIds = new List<string> { "987" }
             };
 
             Module module1 = new Module
@@ -29,6 +30,7 @@ namespace Backend_Api
                 ModuleId = "987",
                 Author = "John Doe",
                 Title = "Agile Development",
+                CourseIds = new List<string> { "1" },
                 Layout = new List<ModuleBaseContent>
                 {
                     new ModuleTextContent
@@ -52,15 +54,6 @@ namespace Backend_Api
                     }
                 }
             };
-
-            CourseModule courseModule1 = new CourseModule
-            {
-                CourseId = course1.CourseId,
-                ModuleId = module1.ModuleId,
-            };
-
-            course1.CourseModules.Add(courseModule1);
-            module1.CourseModules.Add(courseModule1);
 
             var host = BuildWebHost(args);
 

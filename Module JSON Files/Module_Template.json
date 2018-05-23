@@ -1,0 +1,41 @@
+{"Module": {
+	"ID": <will be assigned by the DB>,
+	"Title": <Module title>
+	"Author": <Module Author's Name>
+	"Courses": [<Array of Courses this Module is part of>]
+	"Keywords": [<Array of keywords that describe this module>]
+	"Layout": [
+		{
+			"heading": <heading of section>,
+			"type": "text",
+			"text": <text of content, may support HTML?>
+		},
+		{
+			"heading" :<heading of section>,
+			"type": "image",
+			"link": <link to image>,
+			"caption": <image caption>
+		},
+		{
+			"heading": <heading of section>,
+			"type": "video",
+			"link": <link to video>,
+			"caption": "video caption"
+		},
+		{
+			"heading": <heading of section>,
+			"type": "quiz",
+			"link": <link to quiz>
+		},
+		{
+			"heading": <heading of section>,
+			"type": "slides",
+			"link": <link to slides>
+		}
+	]
+	}
+}
+
+
+
+

@@ -1,0 +1,74 @@
+{"Module": {
+	"ID": <will be assigned by the DB>,
+	"Title": "Holacracy: The New Management System for a Rapidly Changing World"
+	"Author": "Rizky Ramdhani"
+	"Courses": [<Array of Courses this Module is part of>]
+	"Keywords": ["Management", "Meetings", "Organizations", "Flat structure"]
+	"Layout": [
+		{
+			"heading": "Holocracy Book",
+			"type": "image",
+			"link": "https://images-na.ssl-images-amazon.com/images/I/41cfjY%2BXMBL._SX332_BO1,204,203,200_.jpg",
+			"caption": "Holacracy: The New Management System for a Rapidly Changing World by Brian J Robertson"			
+		},
+		{
+			"heading": "The Downsides of Traditional Management",
+			"type": "text",
+			"text": "<p>Have you ever had a time when you proposed a change to management but nothing ever happened from it?  After this experience, did you feel that proposing changes was a waste of time?  Alternatively, let's look at it from the manager's point of view.  An employee of yours comes with a great suggestion, unfortunately you're oversseing multiple projects and multiple people, you have so much on your plate that you decide to put it in the back of the work queue.  As time goes on more things come into your queue with higher priorities and you never see that employee's suggestion ever again.  Perhaps you are too removed from the concerns that your employee is trying to fix so you have a hard time understanding whether the suggestion will actually alleviate the employee's concerns.  Perhaps you do understand the situation and think that the suggestion is a great idea, however, you don't have the authority to approve the changes because it requires an increase to your budget.  You pass off the suggestion up the chain of command, however, that person is even father removed and has more responsibilites than you do.</p><p>Now let's imagine being the CEO, you're the leader of everybody in the organization, and are responsible for the health of company as well as to your shareholders.  If something goes wrong, you are immediately removed from your position.  You're expected to make decisions for the company, but in reality you're far removed from the daily tasks of your employees.  CEOs are not all-knowing supermen, they are simply humans and there is a limit to a human's capabibilities.</p><p>In addition, while most companies appear to have a well-defined organizational structure given by an organizational chart, the reality is that the true working relationship of the chart is more complex than it appears and the true roles and responsibilities of workers in the chart are not reflected accurately and this is a big issue when new work needs to be done.  Have you ever had a time when there was new work assigned to your team but it didn't get done because of role confusion?  You expected somebody else to do it because you thought it was their responsiblity, while the other person tough that it was another's?  If you asked 5 different people in the company a description of your job, it would not be surprising if you received five different responses.</p><p>In the fast moving world of today, organizations need to be agile and be able to evolve quickly to meet external presures.  But given the traditional hierarchical systems of most organizations and the frictions given above, how are companies supposed to change and respond quickly?</p>"
+		},
+		{
+			"heading": "The Real Organization Chart",
+			"type": "image",
+			"link": "https://www.zapposinsights.com/files/accounts/zappos/assets/images/realorgchart.png",
+			"caption": "What an actual organization chart looks like."
+		}
+		{
+			"heading": "Enter Holacracy",
+			"type": "text",
+			"text": "Holacracy is management system that moves away from the traditional hierarchical organizations into an organizational system that can rapidly evolve and meet the demands of a quickly changing world.  Instead of tiers of manager with increasing responsibilies and accountabilities, Holacracy changes the organization so managers aren't needed.  That is not to say that the organization has no need for leaders, but that it does not require the role of managers.  Instead, organizations are organized based on its domains and accountabilities.  Holacracy assumes that the employees that make up the organization are smart, capable problem-solvers, and are invested in the future of the company.  Holacracy provides a set of processes tha allow anybody to propose changes and enact on those changes as long as these changes do not harm the organization, enabling companies to evolve and rapidly change to meet its demands and responsibilities."
+		},
+		{
+			"heading": "Holarchy vs Hierarchy",
+			"type": "image",
+			"link": "https://cdn-images-1.medium.com/max/1200/1*duuXulWoeTPnP9BBPu29oA.png",
+			"caption": "Differences between traditional organization systems and the organization system of Holacracy"
+			
+		},
+		{
+			"heading": "Holarchy",
+			"type": "text",
+			"text": "<p>Holocracy's root derives from the words 'holon', which means a system of wholes, and he greek root for rule, 'cracy'.  So holocracy literally means a system governed by wholes.  Holacracy-based organizations are composed of circles which represent a domain and a well-defined set of accountabilites.  Sub-circles exist within the circles with its own set sub-domin and set of accountabilities, but are still accountable to its parent circle.  The smallest unit in a holarchy is a role, which is filled by one person. A role is not dependent on the person that fills it, rather a role reflects the needs of the organization and can be added, removed, or changed to do so not by a single person but through a concensus process of circle members.</p><p>A circle is not led by a manager, circles are expeced to self-manage and solve tensions through a set of agreed processes.  Instead, circles have lead links that represent the interests of the parent circle to the sub-circle.  Similarly, a cirle has a rep link which represents the interests of the circle to its parent circle.  There are also cross links as a path of communication between circles that are not part of the same parent circle.</p>"
+		},
+		{
+			"heading": "How Does it Work?",
+			"type": "image",
+			"link": "https://www.holacracy.org/wp-content/uploads/2015/07/HIW-Tensions-Drive-Everything-web.png",
+			"caption": "Holacracy change loop"
+		},
+		{
+			"heading": "Meetings and Meetings and Meetings...",
+			"type": "text",
+			"text": "<p>One aspect of working within an organization that cannot be avoided is meetings.  Most people hate meetings because it's time away from getting things done.  Many can agree that meetings are often filled with distractions, where more problems are brought up than solved.  But meetings are a good way for in-person collaboration and is necessary to get everybody on the same page.  Meetings in a Holacracy are a stricter and more focused affair than most people are used to, however though the strict meeting protocols help focus the meetings so issues are addressed.</p><p>There are three essential meetings that Holacracy organizations do which enable the company to evolve quickly and address issues: <ul><li>Tactical Meetings</li><li>Governance Meetings</li><li>Strategy Meetings</li></ul></p><p>Tactical Meetings are focused on the operational work of the circle and are used to triage issues that have come up during the week and remove obstacles so work can progress.  The steps of a Tactical Meeting are:<ol><li>Check-in: Call out distractions, get present for the meeting.  ONe person speaks at a time, no discussion.</li><li>Checklist Review: Checklists are used for recurring actions that the circle performs.  Checks are given to items that have been completed, additional items can be added to the checklist.</li><li>Metrics Review: Each role assigned a metric reports on it by highlighting points of interest.</li><li>Project Updates: Updates are given on ongoing projects, clarifying questions are allowed but no disccusion can occur, any issues can be brought up in the triage step.</li><li>Triage Issues: This is the main part of the meeting where members discuss operational tensions, the output is generally a set of next actions.</li><li>Closing: Each person can share a closing reflection about the meeting, no discussion.</li></ol></p><p>Governance Meetings are focused on making changes to the organization such as: <ul><li>Adding/Removing/Changing Sub-Circles</li><li>Adding/Removing/Changing Roles</li><li>Perform elections for the circle</li></ul>A Governance Meeting can be attended by any member of the circle.  A secratary is in charge of interpreting the company's constitution, record minutes, and schedule meetings on behalf of the circle.  Governance meetings follow a strict protocol and it is up to the facilitator to ensure that all members adhere to the protocol as well as guide the meeting to be productive.  The steps of a Governance Meetings are: <ol><li>Check-in: This round is a space for every participant to call out any destraction and get present for the meeting.  Everyone speaks one at a time and no discussion is allowed.</li><li>Administrative Concerns: Administrative and logistical issues are brought up to take into account for the meeting.  E.g., We only have 2 hours for the meeting.</li><li>Building the Agenda:  Build an agenda of tensions to process.  Use only one or two owrds to capture the tension and add to the agenda.  No discussion is allowed.</li><li>Process each agenda item with the Integrative Decision Making Process:  Agenda items are processed so that the proposal is amended to resolve any objections or the proposal is rejected.  The Integrative Decision Making Process will be covered in the next section.</li><li>Closing:  Each person can share a closing reflection to improve the next meetings.  No discussion.</li></ol></p><p>Although not all organizations do strategy meetings, these meeting are used to determine future directions for the circle.</p><p>Although it may seem that the meeting process are overly strict, it ensures that no disctractions accur and that meetings do what they're intended to do, which is address issues and get everybody on the same page as efficiently as possible.</p>"
+		},
+		{
+			"heading": "Integrative Decision Making Process",
+			"type": "text",
+			"text": "<p>The integrative decision making process is a set of steps used by meeting participants to gain a concensus on the outcome of a proposal.  The steps are as follows:<ol><li>Present Proposal: The proposer describes a tension and a proposal to relieve the tension.  Only the proposer speaks, no discussion.</li><li>Clarifying Questions: Anyone can ask questions to better understand the proposal and the proposer can answer or say \"not specified\".  This is not the space for discussion.</li><li>Reaction Round: One at a time, a person reacts to the proposal, no response or interruption is allowed during a reaction.</li><li>Amend and Clarify: Proposer can further clarify the intent of the proposal or amend the proposal based on the reactions.  No discussion allowed.</li><li>Objection Round: One at a time, each participant says if there are any reasons why adopting the proposal would cause harm to the circle or move the circle backwards.  If there are no objections, the proposal is adopted.</li><li>Integration: Proposal is amended to address each objection while still addressing the proposer's original tension.  Once all objections are addressed, go back to objection round to ensure that there are no new objections.</li><li>Closing: Each person can share a closing reflection to improve the next meetings, no discussion allowed.</li></ol></p>"
+		},
+		{
+			"heading": "Summary",
+			"type": "text",
+			"text": "Holacracy is a tool that enables organizations to quickly respond to any issues it comes accross.  It allows organizations to quickly evolve and it does so through strict processes.  Holacracy organizations are transparent with well-defined roles and circles to eliminate confusion.  Each circle has its own responsibilities and set of accountabilities.  Circle members are expected to self-organize and make efforts to better the company, eliminating the need for tiers of managers and flattening the organization.  A human body is a large organization of organs and cells that is able to do complex tasks. Each organ has its own set of independent functions without the need for the brain to orchestrate every single action and reaction.  If the human body can do this, why not companies?"
+		},
+		{
+			"heading": "Holacracy Quiz"
+			"type": "quiz",
+			"link": <link to quiz>
+		},
+	]
+	}
+}
+
+
+
+

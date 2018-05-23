@@ -1,9 +1,9 @@
 {"Module": {
-	"ID": <will be assigned by the DB>,
-	"Title": "Holacracy: The New Management System for a Rapidly Changing World"
-	"Author": "Rizky Ramdhani"
-	"Courses": [<Array of Courses this Module is part of>]
-	"Keywords": ["Management", "Meetings", "Organizations", "Flat structure"]
+	"ID": 1,
+	"Title": "Holacracy: The New Management System for a Rapidly Changing World",
+	"Author": "Rizky Ramdhani",
+	"Courses": [1, 2],
+	"Keywords": ["Management", "Meetings", "Organizations", "Flat structure"],
 	"Layout": [
 		{
 			"heading": "Holocracy Book",
@@ -61,10 +61,10 @@
 			"text": "Holacracy is a tool that enables organizations to quickly respond to any issues it comes accross.  It allows organizations to quickly evolve and it does so through strict processes.  Holacracy organizations are transparent with well-defined roles and circles to eliminate confusion.  Each circle has its own responsibilities and set of accountabilities.  Circle members are expected to self-organize and make efforts to better the company, eliminating the need for tiers of managers and flattening the organization.  A human body is a large organization of organs and cells that is able to do complex tasks. Each organ has its own set of independent functions without the need for the brain to orchestrate every single action and reaction.  If the human body can do this, why not companies?"
 		},
 		{
-			"heading": "Holacracy Quiz"
+			"heading": "Holacracy Quiz",
 			"type": "quiz",
-			"link": <link to quiz>
-		},
+			"link": "<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=vkx5afea1c2c40f6&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>"
+		}
 	]
 	}
 }

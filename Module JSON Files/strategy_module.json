@@ -1,0 +1,70 @@
+{"Module": {
+	"ID": 9,
+	"Title": "Good Strategy Bad Strategy",
+	"Author": "Richard Rumelt",
+	"Courses": [2],
+	"Keywords": ["Strategy"],
+	"Layout": [
+		{
+            "heading": "Good Strategy Bad Strategy Book",
+            "type": "image",
+            "link": "https://images-na.ssl-images-amazon.com/images/I/51VP6sMF37L._SX338_BO1,204,203,200_.jpg",
+            "caption": "Good Strategy Bad Strategy"
+		},
+		{
+			"heading" :"Summary",
+			"type": "text",
+            "text": "A good strategy is not about vision or goals. It is a carefully researched and well 
+                    designed action plan designed to meet a challenge. However, leaders often substitute targets, 
+                    exhortations and slogans for strategy. Bad strategy, a form of magical thinking, contains fluff, 
+                    dodges problems, mistakes goals for strategy and sets unrealistic goals.
+
+                    - Good strategy focuses on critical issues and decides how to address them.
+                    - It requires research and analysis, hard choices, decisive planning, and action.
+                    - Identifying and leveraging your competitive advantages are the first steps in strategizing.
+                    
+                    A diagnosis a guiding policy” and a set of coherent actions” form the kernel” of a good strategy. 
+                    Master strategists” design their own novel approaches to solving a problem; they don’t choose from standard options. 
+                    Strategic objectives should always be practical and feasible. Good strategy represents a hypothesis, an educated guess, 
+                    about how to increase your business in the most productive way."
+		},
+		{
+			"heading": "Good Strategy",
+			"type": "text",
+            "text": "Good strategy is simple and straightforward. It involves “strength applied to the most
+                    promising opportunity.” Strategizing means identifying pivotal issues within your market and 
+                    industry, and making a plan to focus forceful, results-oriented action on those crucial points. 
+                    Strategy has little to do with ambitious goals, vision, leadership, innovation or determination. 
+                    For many business leaders, unfortunately, strategy is nothing more than an exhortative exercise that 
+                    generates impressive (but generally unrealistic) goals and meaningless slogans.
+
+                    A good business strategy presents a specific action plan to overcome a defined challenge. 
+                    Good strategy involves multiple analyses and the painstaking development of thoughtful, expertly implemented 
+                    policies, designed to surmount obstacles and move the firm profitably ahead. Good strategy is a highly focused, 
+                    problem-solving activity that tackles fundamental issues, not ancillary or specious ones. It uses the intelligent 
+                    application of advantage to reach new heights."
+		},
+		{
+			"heading": "Bad Strategy",
+            "type": "quiz",
+            "text": "Bad strategy isn’t just the opposite of good strategy; bad strategy materializes from \"specific misconceptions and leadership dysfunctions.\" 
+                    Four characteristics typify most bad strategies: Fluff Empty slogans filled with trendy buzzwords take the place of important insights.Consider this 
+                    example from a bank’s internal report: “Our fundamental strategy is one of customer-centric intermediation,” or, translated into plain English, 
+                    “Our bank’s fundamental strategy is being a bank.” Many so-called strategies are equally banal.
+                    Failure to face the challenge You can’t have a strategy if you don’t isolate and find your firm’s main problem. 
+                    Heavy-equipment maker International Harvester sought to revamp its organization with charts and analyses but never addressed the main cause of its internal 
+                    issues: poor employee relations.
+                    Mistaking goals for strategy Objectives are just a wish list if you don’t pair them with concrete action steps.
+                    Bad strategic goals Leaders must set overarching, but always realistic, aims.
+                    Executives who develop bad strategies tend to ignore problems or to see them as pesky irritants; indeed, some believe 
+                    that acknowledging difficult issues equates to negative thinking. Bad strategy, then, becomes no more than a rallying cry, 
+                    similar to the speeches of a football player who exhorts his teammates to win. It can be motivational, but it is not strategic.
+                    Bad strategy is distressingly common because it is much easier to conceive than good strategy, which involves rigorous analysis, 
+                    logical thinking, difficult choices and focused action. Instead, bad strategy involves fill-in-the-blank, template-style thinking.
+
+                    source: http://hjbarraza.com/good-strategy-bad-strategy-summary/",
+			"link": "https://www.classmarker.com/online-test/start/?quiz=97e5b01d9ad5877c"
+		}
+	]
+	}
+}

@@ -1,0 +1,53 @@
+{"Module": {
+	"ID": 3,
+	"Title": "The Effective Engineer",
+	"Author": "Runran Fan",
+	"Courses": [3],
+	"Keywords": ["effective", "engineer", "personal development"],
+	"Layhout":[
+		{
+			"heading" :"The Effective Engineer Book",
+			"type": "image",
+			"link": "https://d3oj8nq9p0q26f.cloudfront.net/blog/assets/images/book/effectiveeng-3d-cover-ed4687b23e70dce29c0c79d599033fc7068f3c83386f7b7095bd9919a47efed2.png",
+			"caption": "The Effective Engineer by Edmond Lau"
+		},
+		{
+			"heading": "Adopt the Right Mindsets - Leverage",
+			"type": "text",
+			"text": "<p>An effective engineer knows how to leverage his/her time to make every day a productive day.</p><p>Increase your leverage in daily activities <ul><li>1. Reducing the time it takes to complete a certain activity</li><li>2. Increasing the output of a particular activity</li><li>3. Shifting to higher-leverage activities</li></ul></p><p>Direct energy toward leverage points, not just easy wins<br>\"Can’t meet until tomorrow? How about 8am? Not free until afternoon? What about 1pm?\" — Facebook hiring culture</p>"
+		},
+		{
+			"heading": "Adopt the Right Mindsets - Optimize to Learn",
+			"type": "text",
+			"text": "<p>Optimize for learning<br>\"Think about... just 1% per day and build upon that every single day ... will make us 37x better, not 365% better\" — Zappos CEO</p><p>Seeking work environments conducive to learning<ul><li>What is the weekly or monthly growth rates of core business metrics (e.g., active users, annual recurring revenue, products sold, etc.)? Is it effective?</li><li>Are the particular initiatives that you’d be working on high priorities, with sufficient support and resources from the company to grow?</li><li>How aggressively has the company or team been hiring in the past year?</li><li>How quickly have the strongest team members grown into positions of leadership?</li></ul></p><p>Categorize your work items to urgent & important, urgent & not important, not urgent & important, not urgent & not important. Find time to focus on \"not urgent & important\" items like personal development and maintaining relationship with your mentor</p><p>Fight procrastination<br>\"If I only have 20 minutes before my next activity, then I will ...\"</p>"
+		},
+		{
+			"heading": "Execute, Execute, Execute - Move fast",
+			"type": "text",
+			"text": "<p>Move fast to learn fast<br>The faster that you can iterate, the more that you can learn about what works and what doesn’t work <br> \"If you never break anything, you’re probably not moving fast enough\" — Facebook</p><p>Invest in time-saving tools<br>Shorten debugging and validation loops Master your programming environment<br>Prefer keyboard over the mouse. It took 12s to find a file, he switched files 60 times a day, thats 12 min navigating between files per day. <br>Don’t ignore your non-engineering bottlenecks</p>"
+		},
+		{
+			"heading": "Execute, Execute, Execute - Metric",
+			"type": "text",
+			"text": "<p>Measure what you want to improve Pick the right metric<ul><li>Hours worked per week vs. productivity per week</li><li>Click-through vs. long click-through rates</li><li>Average response times vs. 95th or 99th percentile response times</li><li>Bugs fixed vs. bugs outstanding</li><li>Registered users vs. weekly growth rate</li><li>Weekly active users vs. weekly active the nth week</li></ul></p><p>Valid your ideas early and often <br>Spend 10% effort to build a small informative prototype and validate</p>"
+		},
+		{
+			"heading": "Execute, Execute, Execute - Estimation",
+			"type": "text",
+			"text": "<p>Use Estimates<>Decompose project into granular tasks<ol><li>Estimate based on how long tasks will take, not on how long you or someone else wants them to take</li><li>Probability distributions, not best-case</li><li>Let the person doing the actual task make the estimate</li><li>Beware of anchoring bias</li><li>Use multiple approaches</li><li>Beware of mythical man-mouth</li><li>Validate against historical data</li><li>Use timeboxing to constrain tasks that can grow in scope</li><li>Allow others to challenge estimates</li></ol></p>"
+		},
+		{
+			"heading": "Edmond Lau: The Effective Engineer | Talks at Google",
+			"type": "video",
+			"link": "https://www.youtube.com/embed/BnIz7H5ruy0",
+			"caption": "Edmond Lau: The Effective Engineer | Talks at Google"
+		},
+		{
+			"heading": "The Effective Engineer Quiz",
+			"type": "quiz",
+			"link": "'<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=frm5b03f42a4b604&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>'\""
+
+		}
+	]
+	}
+}

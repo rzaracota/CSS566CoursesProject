@@ -1,0 +1,95 @@
+{
+    "Module": {
+        "ID": 5,
+        "Title": "Insane Productivity for Lazy People",
+        "Author": "Andrii Sedniev",
+        "Courses": [2, 3, 4],
+	    "Keywords": ["Productivity", "Will Power", "Passion", "People", "Multitasking", "Workplace"],
+        "Layout": [{
+                "heading": "Introduction",
+                "type": "image",
+                "link": "https://drive.google.com/open?id=172M0iIG3D0h1okL13P7fvyQ0F2KLtv7Q",
+                "caption": "Insane Productivity for Lazy People by Andrii Sedniev"
+            },{
+                "heading": "Productivity",
+                "type": "text",
+                "text": "Productivity means the number of high-value tasks that you can perform during the day. It relates not only to the ability to perform work effectively, but also to the ability to learn, build relations, be healthy and have fun thus squeezing out of life several times more than unproductive people do."
+            },
+            {
+                "heading": "Productivity",
+                "type": "image",
+                "link": "https://drive.google.com/open?id=1ACvvQncVBD2KOCKGeM2ClLvoJqfA3fOs",
+                "caption": "Productivity"
+            },
+            {
+                "heading": "SET GOALS & DEADLINES",
+                "type": "text",
+                "text": "1. Specific, measurable, achievable, relevant and timed (SMART) – Scrum Planning
+                         2. Deadlines – Increases probability that the task will be accomplished on time
+                         3. Formula: Time + Focus + Energy = Productivity
+                         4. Plan, Measure, Reward – Follow the evening & morning ritual. Plan ahead the tasks you want to accomplish the next day.
+                         5. Visualize successful accomplishment of your goals. It increases focus and directs actions"
+            },
+            {
+                "heading": "TURN OFF MULTITASKING",
+                "type": "text",
+                "text": "1. Multitasking is the biggest enemy of productivity. It causes your productivity to drop due to 3 main reasons:
+                              •	Attention Residue
+                              •	Shifting Costs
+                              •	Reduced Quality of work
+                        2. You can perform two or more tasks productively if and only if only one of them requires your attention.
+                        3. It’s STRONGLY discouraged for people to work on different products at the same time."
+            },
+            {
+                "heading": "RESTORE ENERGY",
+                "type": "text",
+                "text": "1. School Bell Technique: Pulse between periods of work with high level of attention and breaks.
+                              •	45 minutes of work 15 minutes of break
+                              •	5 days of work 2 days of break
+                              •	3 months of work 1 week of vacation
+
+                         2. Stay Healthy Stay Productive:
+                              •	7-9 hours nightly sleep
+                              •	Exercise several times a week
+                              •	Eat healthy nutritious food
+
+                         3. Train your attention muscles to achieve peak levels of attention.
+
+                         4. Fact: The most productive people take more days off than others."
+            },
+            {
+                "heading": "PRODUCTIVITY AVALANCHE",
+                "type": "text",
+                "text": "1. Zeigarnik Effect: If people are interrupted after beginning work on a task, they feel discomforted and feel an urge to return working on it.
+                         2. Job Begun == Half Done: Spend at least 5 mins on the very first task of the day to overcome inertia. Zeigarnik effect ensures you will finish the task providing satisfaction that will propel you towards the next task.
+                         3. With each accomplished task it becomes easier to overcome initial inertia in the next."
+            },
+            {
+                "heading": "GOLDEN ACTION",
+                "type": "text",
+                "text": "1. Pareto Principle: Roughly 80% of the effect comes from 20% of the causes.
+                              •	20% customers -> 80% revenue
+                              •	20% criminals -> 80% crimes
+                              •	20% programming code -> 80% bugs
+                              •	20% of your work -> 80% of results
+
+                          2.  Stop from time-to-time to identify that one task, the Golden Action, which will bring you the most progress towards your long-term goals to significantly increase productivity.
+
+                          3.  Delegate, Eliminate & Optimize your tasks to spend more time, energy & attention to the most important 20% of the tasks."
+            },
+            {
+                "heading": "CREATE THE PERFECT WORKPLACE",
+                "type": "text",
+                "text": "Research has proven that creating your “perfect” workplace can noticeably increase productivity. You should:
+                            •	Remove clutter from your desk
+                            •	Set a comfortable room temperature
+                            •	Occasionally switch your location"
+            },
+            {
+			"heading": "Quiz",
+			"type": "quiz",
+			"link": <iframe src="https://www.classmarker.com/online-test/start/?quiz=rck5afbb261dbb5d&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>
+		},
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{"Module": {
+	"ID": 6,
+	"Title": "Managing Humans"
+	"Author": "Greg Wright"
+	"Courses": [1, 3]
+	"Keywords": ["Personell", "Managment"]
+	"Layout": [
+		{
+			"heading": "Introduction"
+			"type": "text",
+			"text": "The book Managing human by Michael Lopp is an excellent read that cover a great deal of material concerning personnel and product management. It is a book that I highly recommend and is a very easy read as Loops writing style is much more conversational than most management books. While this book is targeted at the manager and more specifically software development managers the tools inside can would be massively beneficial in any field. Additionally, reading this book would benefit non-manager to better understand what makes a good manager and what goes on in the head of yours. This module will cover two of the introductory chapters that I think have some of the most important points for managers and employees alike.",
+		},
+		{
+			"heading" :"Don’t be a prick",
+			"type": "text",
+			"text": "<p>Fundamentality Lopp’s main take away from his management experience was that the first and last step to being a good manager is don’t be a prick. This doesn’t mean that you should be a push over or to be afraid to fire some someone, but that there are ways to go about it that don’t destroy people. He also points out that people need to see and know their managers. His first chapter tells an excellent story about a CEO that while actually a nice guy felt like he was the enemy (also known as a prick). This was do to many reasons, but it all stemmed down to that fact that he was an aloof and distant manger. Here a few excerpts from this chapter.<br>&quot;My definition of a great manger is someone with whom you can make a connection no matter where you sit in the organization chart. What exactly I mean by connection varies wildly by who you are and what you want. And, yes that means great managers have to work terribly hard to see the subtle difference in each of the people working for them.&quot;<br>Ie. Get to know your staff<br>&quot;The CEO believed that these spreadsheet-laden, all hands meeting was all the connection he needed to build a relationship, and, for the duration of those meetings, he was right. We felt well informed after his meetings, but our needs were different a week later when rumors of layoffs started up. They were drastically different a month later when that layoff went down, and the CEO was nowhere to be seen… Prick.&quot;<br>In short be there for your staff even when things are bad.<br></p>"
+		},
+		{
+			"heading" :"The Rands Test",
+			"type": "text",
+			"text":"<p>Now it is time for a test, accept we will be really testing your manager. Loop has this really well put together test that helps you understand the strength of your managers. But first a few clarifications on the questions, well really one question. Killing the grapevine is about destroying any rumor mill or rumor mongering in the organization. I refer you to I Heard It Through the Grapevine by Marvin Gaye.</p>"
+		},
+		{
+			"heading": "The Test!",
+			"type": "quiz",
+			"link": <iframe src="https://www.classmarker.com/online-test/start/?quiz=cne5b04d2e1a95e0&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>
+		},
+		{
+			"heading": "The Rands Test Continued",
+			"type": "text",
+			"text": "<p>The Rands Test is what Loop feels is the minimum that your managers should be providing you to keep things running smoothly. I think Lopp say it best on what the outcome should be.<br>&quot;If you got an 11, I’d say you’re in a rare group of people who have a clear picture of their company and where they fit in. Between 8 and 10, you are likely troublingly deficient in either communications, strategy, or your development—it depends where the points are missing. Less than 8 and I think you’ve got a couple of problems.&quot;<br>To paraphrase him form latter in the chapter under 6 and you should be running as fast as you can. He even has a chapter towards the end to facilitate this running gracefully and without burning all of your bridges.That is all for this module place take a look at Lopp’s book Managing Humans for more information on these topics and much more.</p>"
+		}
+	]
+	}
+}
+
+
+

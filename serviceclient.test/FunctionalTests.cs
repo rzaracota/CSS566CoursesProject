@@ -49,7 +49,7 @@ namespace serviceclient.test
 
             var title = modules[0].Title;
 
-            var module = client.Get(modules[0].Id);
+            var module = client.Get(modules[0].ModuleId);
 
             Assert.NotNull(module);
 

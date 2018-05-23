@@ -9,6 +9,10 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\netcoreapp2.0\Backend Api.xml</DocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Backend Api.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Provider\" />
   </ItemGroup>

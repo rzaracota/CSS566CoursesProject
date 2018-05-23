@@ -1,0 +1,6 @@
+{ "Course": {
+    "ID" : 1,
+    "Name": "Management",
+    "Modules": [1, 4, 5, 8, 2]
+    }
+}

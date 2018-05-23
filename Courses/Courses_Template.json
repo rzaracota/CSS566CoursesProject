@@ -1,0 +1,6 @@
+{ "Course": {
+    "ID" : <To be assigned by DB>,
+    "Name": <Name of Course>,
+    "Modules": [<Array of Module IDs included in this course>]
+    }
+}

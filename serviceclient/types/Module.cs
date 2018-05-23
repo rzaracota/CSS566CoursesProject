@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace serviceclient.types {
@@ -16,6 +17,12 @@ namespace serviceclient.types {
         public string Author { get; set; }
 
         [DataMember]
+        public List<string> CourseIds { get; set; }
+
+        [DataMember]
         public CourseModule CourseModule { get; set; }
+    
+        [DataMember (Name = "Layout")]
+        public List<ModuleBaseContent> ModuleContent { get; set; }
     }
 }

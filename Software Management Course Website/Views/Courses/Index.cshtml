@@ -1,10 +1,11 @@
-﻿@{
+﻿@page
+@model CourseIndexModel
+@{
     ViewData["Title"] = "Course Content";
 }
 
 @*<h2>Course Content</h2>*@
 
-@model RootObject
 @if (Model == null || Model.Module == null)
 {
     <h2><strong>Sorry, no content is available at this time :(</strong></h2>

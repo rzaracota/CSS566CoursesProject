@@ -23,4 +23,8 @@
     <Folder Include="Models\CoursesModel\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\serviceclient\serviceclient.csproj" />
+  </ItemGroup>
+
 </Project>

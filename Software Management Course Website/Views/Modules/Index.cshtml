@@ -1,0 +1,16 @@
+@model ModulesViewModel
+
+@{
+    ViewData["title"] = "Modules"; 
+    Layout = "_Layout";
+}
+
+<div class="module">
+    <h3>Hello there</h3>
+
+    <ul>
+    @foreach (var module in Model.Modules) {
+        <li>@module.ModuleId @module.Title</li>
+    }
+    </ul>
+</div>

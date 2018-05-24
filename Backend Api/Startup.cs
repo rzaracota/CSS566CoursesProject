@@ -5,9 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Swagger;
+using Backend_Api.Repo_Model;
 
 namespace Backend_Api
 {
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -31,6 +33,8 @@ namespace Backend_Api
                 c.SwaggerDoc("v1", new Info { Title = "API", Description = "Swagger API" });
                 var xmlPath = System.AppDomain.CurrentDomain.BaseDirectory + @"Backend Api.xml";
                 c.IncludeXmlComments(xmlPath);
+                c.DocumentFilter<PolymorphismDocumentFilter<ModuleBaseContent>>();
+                c.SchemaFilter<PolymorphismSchemaFilter<ModuleBaseContent>>();
             });
                                    
         }

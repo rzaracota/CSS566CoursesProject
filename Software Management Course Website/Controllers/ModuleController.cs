@@ -21,12 +21,13 @@ namespace Software_Management_Course_Website.Controllers
     
         public List<Module> Modules { get; private set; } 
 
+        public string Message { get; set; }
+
         public ModulesController(IConfiguration configuration)
         {
-            if (!(string.IsNullOrEmpty(configuration["backendapi"])
-                || string.IsNullOrEmpty(configuration["backendapi:uri"]))) {
-                endpoint = configuration["backendapi:uri"];
-            }
+            // test for presence of keys
+            endpoint = configuration["backendapi:uri"];
+            Message = configuration["backendapi:message"];
 
             client = new ServiceClient<Module>(endpoint);
         }
@@ -36,6 +37,7 @@ namespace Software_Management_Course_Website.Controllers
             var model = new ModulesViewModel();
 
             model.Modules = client.Get();
+            model.Message = string.IsNullOrEmpty(Message) ? "message not set" : Message;
 
             return View(model);
         }

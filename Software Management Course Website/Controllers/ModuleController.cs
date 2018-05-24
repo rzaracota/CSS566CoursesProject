@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using serviceclient;
 using serviceclient.types;
 
@@ -20,8 +21,13 @@ namespace Software_Management_Course_Website.Controllers
     
         public List<Module> Modules { get; private set; } 
 
-        public ModulesController()
+        public ModulesController(IConfiguration configuration)
         {
+            if (!(string.IsNullOrEmpty(configuration["backendapi"])
+                || string.IsNullOrEmpty(configuration["backendapi:uri"]))) {
+                endpoint = configuration["backendapi:uri"];
+            }
+
             client = new ServiceClient<Module>(endpoint);
         }
 

@@ -14,7 +14,7 @@ namespace Software_Management_Course_Website.Controllers
     {
         private Models.RootObject items;
         
-        private static string endpoint = "http://localhost:1738/module";
+        private static string endpoint = "http://css566backend.azurewebsites.net/module";
 
         private ServiceClient<Module> client = new ServiceClient<Module>(endpoint);
     

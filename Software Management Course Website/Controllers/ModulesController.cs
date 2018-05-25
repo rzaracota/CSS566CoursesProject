@@ -17,7 +17,7 @@ namespace Software_Management_Course_Website.Controllers
     {
         private static string endpoint =  "http://css566backend.azurewebsites.net/";
 
-        private ServiceClient<Module> client = new ServiceClient<Module>(endpoint + "/course");
+        private ServiceClient<Module> client = null;
 
         private Models.RootObject items;
 
@@ -36,13 +36,21 @@ namespace Software_Management_Course_Website.Controllers
                 items = JsonConvert.DeserializeObject<Models.RootObject>(json);
             }
 
-            items = new Models.RootObject();
+            if (endpoint.Last() == '/') {
+                endpoint = endpoint.Substring(0, endpoint.Length - 1);
+            }
+
+            endpoint += "/module";
+
+            client = new ServiceClient<Module>(endpoint);
 
             items.Module = client.Get().First();
         }
 
         public IActionResult Index()
         {
+            items.Module = client.Get().First();
+
             return View(items);
         }
     }

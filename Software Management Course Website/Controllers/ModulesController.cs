@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 
 using serviceclient;
 using serviceclient.types;
+using Software_Management_Course_Website.Models;
 
 namespace Software_Management_Course_Website.Controllers
 {
@@ -17,9 +18,9 @@ namespace Software_Management_Course_Website.Controllers
     {
         private static string endpoint =  "http://css566backend.azurewebsites.net/";
 
-        private ServiceClient<Module> client = new ServiceClient<Module>(endpoint + "/course");
+        private ServiceClient<serviceclient.types.Module> client = new ServiceClient<serviceclient.types.Module>(endpoint + "/course");
 
-        private Models.RootObject items;
+        private Models.Module items;
 
         private string Message { get; set; }
 
@@ -33,10 +34,10 @@ namespace Software_Management_Course_Website.Controllers
             using (StreamReader r = new StreamReader(@"Data/AgileGameDevelopmentModule.json"))
             {
                 string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<Models.RootObject>(json);
+                items = JsonConvert.DeserializeObject<Models.Module>(json);
             }
 
-            items = new Models.RootObject();
+            items = new Models.Module();
 
             items.Module = client.Get().First();
         }

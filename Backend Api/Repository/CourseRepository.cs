@@ -20,6 +20,10 @@ namespace Backend_Api.Repository {
 
         private CourseApi ConvertCourseToCourseApi(Course course)
         {
+            if (course == null)
+            {
+                return null;
+            }
             CourseApi apiResult = new CourseApi();
             apiResult.CourseId = course.CourseId;
             apiResult.ModuleIds = course.ModuleIds;
@@ -29,6 +33,10 @@ namespace Backend_Api.Repository {
 
         private Course ConvertCourseApiToCourse(CourseApi api)
         {
+            if (api == null)
+            {
+                return null;
+            }
             Course dataModel = new Course();
             dataModel.CourseId = api.CourseId;
             dataModel.ModuleIds = api.ModuleIds;

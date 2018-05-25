@@ -1,9 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Course Content";
 }
-
 @*<h2>Course Content</h2>*@
-
 @model RootObject
 @if (Model == null || Model.Module == null)
 {
@@ -11,81 +9,207 @@
 }
 else
 {
-    <p>
-        <h2>@Model.Module.Title</h2><br />
-        <h3>Author: @Model.Module.Author</h3><br />
-        <h4>Courses in this Module:</h4>
-        @foreach (var course in Model.Module.Courses)
-        {
-            <h5>
-                @course
-            </h5>
+<head>
+    <!--jQuery-->
+    <script src = "https://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin = "anonymous"></script>
+
+
+    <!--Bootstrap CSS & JS-->
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity = "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin = "anonymous">
+
+     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin = "anonymous" ></script>
+
+
+          <!--Bootstrap table of contents plugin -->
+
+          <link rel = "stylesheet" href = "https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+
+             <script src = "https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js" ></script>
+
+
+              <style>
+                  /*
+                      Follows example of static navbar from:
+                      https://github.com/afeld/bootstrap-toc/blob/v0.4.1/index.md#usage
+                  */
+                  nav[data - toggle = 'toc'] {
+            margin - top: 30px;
         }
-    </p>
-    @foreach (var layoutElement in Model.Module.Layout)
-    {
-        switch (layoutElement.Type)
-        {
-            case "image":
-                <br />
-                <div class="image">
-                    <img src=@layoutElement.Link
-                         style="width: 50%; height: 50%;"
-                         alt="Agile Game Development with Scrum" />
-                    <div>@layoutElement.Caption</div>
+
+        @@media(max - width: 768px) {
+            nav.affix[data - toggle = 'toc'] {
+            position: static;
+            }
+
+            /* don't expand nested items, which pushes down the rest of the page when navigating */
+            nav[data - toggle = 'toc'].nav.active.nav {
+            display: none;
+            }
+        }
+
+    </style>
+    <script type = "text/javascript">
+                $(document).ready(function() {
+        $("#quiz").submit(function(e) {
+                // validate the user's answers
+                var totalCorrect = 0;
+                var expectedIndicies = [1, 2, 3, 1];
+                var total = expectedIndicies.length;
+
+                for (var i = 0; i < expectedIndicies.length; i++)
+                {
+                    var id = "input[name=practice" + (i + 1) + "]:checked";
+                    var userIndex = parseInt($(this).find(id).val());
+
+                    if (expectedIndicies[i] == userIndex)
+                    {
+                        totalCorrect += 1;
+                    }
+                }
+
+                if (totalCorrect !== total)
+                {
+                    alert(totalCorrect
+                          + "/"
+                          + total
+                          + " correct, please try again");
+                }
+                else
+                {
+                    alert(totalCorrect
+                          + "/"
+                          + total
+                          + " correct, good job!");
+                }
+
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-target="#toc">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" style="margin-top: 15px">
+                <nav id="toc" data-spy="affix" data-toggle="toc">
+                    <a href="https://www.amazon.com/Beyond-Legacy-Code-Practices-Software/dp/1680500791">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51i2wpsNuKL._SX415_BO1,204,203,200_.jpg"
+                             style="width: 40%; height: 40%;"
+                             alt="Beyond Legacy Code Front Cover" />
+                    </a>
+                </nav>
+
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h1>@Model.Module.Title</h1><br />
+                        <h3>Author: @Model.Module.Author</h3><br />
+                        <h3>Courses in this Module:</h3>
+                        <p>
+                            @foreach (var course in Model.Module.Courses)
+                            {
+                                <h4>
+                                    @course
+                                </h4>
+                            }
+                        </p>
+                    </div>
                 </div>
-                <br />
-                break;
+                @foreach (var layoutElement in Model.Module.Layout)
+                {
+                    switch (layoutElement.Type)
+                    {
+                        case "image":
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <div class="image">
+                                        <img src=@layoutElement.Link
+                                             style="width: 50%; height: 50%;"
+                                             alt="Agile Game Development with Scrum" />
+                                        <div>@layoutElement.Caption</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            case "text":
-                <br />
-                <p>
-                    <h4>@layoutElement.Heading</h4>
-                    @Html.Raw(layoutElement.Text)
-                </p>
-                <br />
-                break;
+                        case "text":
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <p>
+                                        <h1>@layoutElement.Heading</h1>
+                                        @Html.Raw(layoutElement.Text)
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            case "video":
-                <br />
-                <p>
-                    <h4>@layoutElement.Heading</h4>
-                    <br />
-                    <iframe width="560"
-                            height="315"
-                            src=@layoutElement.Link
-                            frameborder="0"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen></iframe>
-                </p>
-                <br />
-                break;
+                        case "video":
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <p>
+                                        <h1>@layoutElement.Heading</h1>
+                                        <br />
+                                        <iframe width="560"
+                                                height="315"
+                                                src=@layoutElement.Link
+                                                frameborder="0"
+                                                allow="autoplay; encrypted-media"
+                                                allowfullscreen></iframe>
+                                    </p>
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            case "slideset":
-                <br />
-                <h4>@layoutElement.Heading</h4>
-                <br />
-                <iframe src=@layoutElement.Link
-                        width='722px' height='565px'
-                        frameborder='0'></iframe>
-                <br />
-                break;
+                        case "slideset":
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h1>@layoutElement.Heading</h1>
+                                    <br />
+                                    <iframe src=@layoutElement.Link
+                                            width='722px' height='565px'
+                                            frameborder='0'></iframe>
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            case "quiz":
-                <br />
-                <h4>@layoutElement.Heading</h4>
-                <br />
-                break;
+                        case "quiz":
+                            <br />
+                             <div class="row">
+                                <div class="col-xs-8">
+                                    <h1>@layoutElement.Heading</h1>
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            case "custom":
-                <br />
-                <h4>@layoutElement.Heading</h4>
-                @Html.Raw(layoutElement.Link)
-                <br />
-                break;
+                        case "custom":
+                            <br />
+                             <div class="row">
+                                <div class="col-xs-8">
+                                    <h1>@layoutElement.Heading</h1>
+                                    @Html.Raw(layoutElement.Link)
+                                </div>
+                            </div>
+                            <br />
+                            break;
 
-            default:
-                break;
-        }
-    }
+                        default:
+                            break;
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</body>
 }

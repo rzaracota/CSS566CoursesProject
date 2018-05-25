@@ -13,7 +13,7 @@ namespace Software_Management_Course_Website.Controllers
 {
     public class CoursesController : Controller
     {
-        private Models.RootObject items;
+        private Models.Course items;
         
         private static string endpoint = "http://css566backend.azurewebsites.net/";
 

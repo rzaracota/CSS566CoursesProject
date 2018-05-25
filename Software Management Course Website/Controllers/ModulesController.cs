@@ -19,7 +19,7 @@ namespace Software_Management_Course_Website.Controllers
 
         private ServiceClient<Module> client = null;
 
-        private Models.RootObject items;
+        private ModulesViewModel items;
 
         private string Message { get; set; }
 
@@ -29,13 +29,6 @@ namespace Software_Management_Course_Website.Controllers
             endpoint = configuration["backendapi:uri"];
             Message = configuration["backendapi:message"];
 
-            // Load JSON here
-            using (StreamReader r = new StreamReader(@"Data/AgileGameDevelopmentModule.json"))
-            {
-                string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<Models.RootObject>(json);
-            }
-
             if (endpoint.Last() == '/') {
                 endpoint = endpoint.Substring(0, endpoint.Length - 1);
             }
@@ -43,13 +36,11 @@ namespace Software_Management_Course_Website.Controllers
             endpoint += "/module";
 
             client = new ServiceClient<Module>(endpoint);
-
-            items.Module = client.Get().First();
         }
 
         public IActionResult Index()
         {
-            items.Module = client.Get().First();
+            items.Modules = client.Get();
 
             return View(items);
         }

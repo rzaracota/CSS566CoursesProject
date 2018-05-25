@@ -93,7 +93,7 @@ else
     <div class="container">
         <div class="row">
             <div class="col-sm-3" style="margin-top: 15px">
-                <nav id="toc" data-spy="affix" data-toggle="toc" style="word-wrap: break-word; max-width: 325px;">
+                <nav id="toc" data-spy="affix" data-toggle="toc" style="word-wrap: break-word; max-width: 300px;">
                     @{var m = Model.Module.Layout.Where(im => im.Type == "titleimage").FirstOrDefault();}
                     @if(m != null && m.Link != null)
                     {

@@ -1,6 +1,8 @@
-﻿s@model Software_Management_Course_Website.Models
+﻿@model ModulesViewModel
 @{
     ViewData["Title"] = "Course Content";
+
+    Model.Module = Model.Modules.First();
 }
 
 @*<h2>Course Content</h2>*@

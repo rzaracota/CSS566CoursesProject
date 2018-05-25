@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace Software_Management_Course_Website.Models
 {
-    public class Module
+    public class ModuleB
     {
         [JsonProperty(PropertyName = "ModuleId")]
         public int ModuleID { get; set; }

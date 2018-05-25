@@ -19,8 +19,6 @@ namespace Software_Management_Course_Website.Controllers
 
         private ServiceClient<Module> client = null;
 
-        private ModulesViewModel items;
-
         private string Message { get; set; }
 
         public ModulesController(IConfiguration configuration)
@@ -40,9 +38,9 @@ namespace Software_Management_Course_Website.Controllers
 
         public IActionResult Index()
         {
-            items.Modules = client.Get();
+            var viewModel = client.Get();
 
-            return View(items);
+            return View(viewModel);
         }
     }
 }

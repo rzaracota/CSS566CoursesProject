@@ -214,14 +214,24 @@ namespace Backend_Api.Repository
             return null;
         }
 
-        public Task<Document> UpdateCourseAsync(string id, Course value)
+        public async Task<Document> UpdateCourseAsync(string id, Course value)
         {
-            throw new NotImplementedException();
+            // retrieve the document ID
+            Course dataModel = await GetCourseAsync(id);
+            value.Id = dataModel.Id;
+            return await client.ReplaceDocumentAsync(
+                UriFactory.CreateDocumentUri(DatabaseID, CollectionID, dataModel.Id),
+                value);
         }
 
-        public Task<Document> UpdateModuleAsync(string id, Module value)
+        public async Task<Document> UpdateModuleAsync(string id, Module value)
         {
-            throw new NotImplementedException();
+            // retrieve the document ID
+            Module dataModel = await GetModuleAsync(id);
+            value.Id = dataModel.Id;
+            return await client.ReplaceDocumentAsync(
+                UriFactory.CreateDocumentUri(DatabaseID, CollectionID, dataModel.Id), 
+                value);
         }
     }
 }

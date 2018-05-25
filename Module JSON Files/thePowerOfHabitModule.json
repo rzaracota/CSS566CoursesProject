@@ -8,87 +8,52 @@
 		{
 			"heading": "The Habit Loop",
 			"type": "text",
-			"text": "<ul>
-			<li>The habit loop: cues (trigger automatic mode), routine (physical, mental, emotional), and reward (to let the brain know if it is worth it to remember in the future) </li>
-			<li>Once habit is created, the brain work less and less because brain is constantly looking for ways to save efforts</li>
-			<li>Habits never really disappear. They’re encoded to the structure of our brain. It would be awful if you forget how to drive after you come back from vacation. The problem is the brain couldn’t tell if it’s good or bad habit</li>
-			<li>Habits are surprisingly delicate. If a cue get changed slightly, the habits fall apart</li>
-		    </ul>"
+			"text": "<ul><li>The habit loop: cues (trigger automatic mode), routine (physical, mental, emotional), and reward (to let the brain know if it is worth it to remember in the future) </li><li>Once habit is created, the brain work less and less because brain is constantly looking for ways to save efforts</li><li>Habits never really disappear. They’re encoded to the structure of our brain. It would be awful if you forget how to drive after you come back from vacation. The problem is the brain couldn’t tell if it’s good or bad habit</li><li>Habits are surprisingly delicate. If a cue get changed slightly, the habits fall apart</li></ul>"
 		},
 		{
 			"heading": "The Craving Brain",
 			"type": "text",
-			"text": "<ul>
-				<li>The craving is what powers the habit loop</li>
-				<li>How to create habit : find a simple and obvious cue and clearly define the rewards</li>
-				<li>Cravings are what drive habits</li>
-				<li> Figuring out how to spark a craving makes creating a new habit easier</li>
-			</ul>"
+			"text": "<ul><li>The craving is what powers the habit loop</li><li>How to create habit : find a simple and obvious cue and clearly define the rewards</li><li>Cravings are what drive habits</li><li> Figuring out how to spark a craving makes creating a new habit easier</li></ul>"
 		},
 		{
 			"heading": "The Golden Rule of Habit Change",
 			"type": "text",
-			"text": "<ul>
-				<li>Change a habit - keep the old cue, deliver the old reward, insert new routine</li>
-				<li>Stop craving cant stop habits (brain electrode experiment); only transform habits</li>
-			</ul>"
+			"text": "<ul><li>Change a habit - keep the old cue, deliver the old reward, insert new routine</li><li>Stop craving cant stop habits (brain electrode experiment); only transform habits</li></ul>"
 		},
 		{
 			"heading": "Keystone habits, or the ballad of Paul O'Neill",
 			"type": "text",
-			"text": "<ul>
-			<li>The keystone habit is the most important habit which causes other good habits emerge</li>
-			<li>Organization example: Alcoa</li>
-		    </ul>"
+			"text": "<ul><li>The keystone habit is the most important habit which causes other good habits emerge</li><li>Organization example: Alcoa</li></ul>"
 		},
 		{
 			"heading": "Starbucks and the Habit of Success",
 			"type": "text",
-			"text": "<ul>
-			<li>Willpower is the single most important keystone habit for individual success</li>
-			<li>The best way to strength willpower is to make it into a habit</li>
-			<li>Companies require many entry-level workers face the same problem - no matter how much their employees want to do a great job, many will fail because they lack self-discipline</li>
-			<li>Organization example: Starbucks</li>
-		    </ul>"
+			"text": "<ul><li>Willpower is the single most important keystone habit for individual success</li><li>The best way to strength willpower is to make it into a habit</li><li>Companies require many entry-level workers face the same problem - no matter how much their employees want to do a great job, many will fail because they lack self-discipline</li><li>Organization example: Starbucks</li></ul>"
 		},
 		{
 			"heading": "The Power of A Crisis",
 			"type": "text",
-			"text": "<ul>
-			<li>Bad habit can happen whining any organization where habits aren’t deliberately planned</li>
-			<li>Leaders think crisis as an opportunity to transform a company by creating new habits</li>
-			<li>Organization example: Rhode Island Hospital</li>
-		    </ul>"
+			"text": "<ul><li>Bad habit can happen whining any organization where habits aren’t deliberately planned</li><li>Leaders think crisis as an opportunity to transform a company by creating new habits</li><li>Organization example: Rhode Island Hospital</li></ul>"
 		},
 		{
 			"heading": "How Target Knows What You Want Before You Do",
 			"type": "text",
-			"text": "<ul>
-			<li>Retailers want to know shopper's habits to get them to buy stuff</li>
-			<li>Shoppers with shopping list normally buy more than the list because of habits</li>
-			<li>Organization example: Target</li>
-		    </ul>"
+			"text": "<ul><li>Retailers want to know shopper's habits to get them to buy stuff</li><li>Shoppers with shopping list normally buy more than the list because of habits</li><li>Organization example: Target</li></ul>"
 		},
 		{
 			"heading": "Saddleback Church And the Montgomery Bus Boycott",
 			"type": "text",
-			"text": "<ul>
-			<li>Movement is consisted of three parts: social habits of friendship and the strong tie, the habits of community and the weak ties, and leaders give participants new habits that create a sense of new identity and ownership</li>
-			<li>Example: Montgomery bus boycutt</li>
-		    </ul>"
+			"text": "<ul><li>Movement is consisted of three parts: social habits of friendship and the strong tie, the habits of community and the weak ties, and leaders give participants new habits that create a sense of new identity and ownership</li><li>Example: Montgomery bus boycutt</li></ul>"
 		},
 		{
 			"heading": "The Neurology of Free Will",
 			"type": "text",
-			"text": "<ul>
-			<li>Are we responsible for our habits? How society assign responsibility?</li>
-			<li>Example: Gambling vs Sleepwalking/Sleep Terrors</li>
-		    </ul>"
+			"text": "<ul><li>Are we responsible for our habits? How society assign responsibility?</li><li>Example: Gambling vs Sleepwalking/Sleep Terrors</li></ul>"
 		},
 		{
 			"heading": "The Power of Habit Quiz",
 			"type": "quiz",
-			"link": <iframe src="https://www.classmarker.com/online-test/start/?quiz=3bn5b03f35a2d5ea&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>
+			"link": '<iframe src="https://www.classmarker.com/online-test/start/?quiz=3bn5b03f35a2d5ea&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>'
 		}
 	]
 	}

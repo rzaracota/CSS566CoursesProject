@@ -1,15 +1,14 @@
 {"Module": {
-	"ID": 6,
-	"Title": "Managing Humans"
-	"Author": "Greg Wright"
-	"Courses": [1, 3]
-	"Keywords": ["Personell", "Managment"]
+	"ID": "6",
+	"Title": "Managing Humans",
+	"Author": "Greg Wright",
+	"Courses": [1, 3],
+	"Keywords": ["Personell", "Managment"],
 	"Layout": [
 		{
-			"heading": "Introduction"
+			"heading": "Introduction",
 			"type": "text",
-			"text": "The book Managing human by Michael Lopp is an excellent read that cover a great deal of material concerning personnel and product management. It is a book that I highly recommend and is a very easy read as Loops writing style is much more conversational than most management books. While this book is targeted at the manager and more specifically software development managers the tools inside can would be massively beneficial in any field. Additionally, reading this book would benefit non-manager to better understand what makes a good manager and what goes on in the head of yours. This module will cover two of the introductory chapters that I think have some of the most important points for managers and employees alike.",
-		},
+			"text": "<p>The book Managing human by Michael Lopp is an excellent read that cover a great deal of material concerning personnel and product management. It is a book that I highly recommend and is a very easy read as Loops writing style is much more conversational than most management books. While this book is targeted at the manager and more specifically software development managers the tools inside can would be massively beneficial in any field. Additionally, reading this book would benefit non-manager to better understand what makes a good manager and what goes on in the head of yours. This module will cover two of the introductory chapters that I think have some of the most important points for managers and employees alike.</p>"},
 		{
 			"heading" :"Don’t be a prick",
 			"type": "text",
@@ -23,7 +22,7 @@
 		{
 			"heading": "The Test!",
 			"type": "quiz",
-			"link": <iframe src="https://www.classmarker.com/online-test/start/?quiz=cne5b04d2e1a95e0&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>
+			"link": "<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=cne5b04d2e1a95e0&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>"
 		},
 		{
 			"heading": "The Rands Test Continued",
@@ -33,6 +32,4 @@
 	]
 	}
 }
-
-
 

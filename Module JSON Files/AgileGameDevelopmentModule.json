@@ -1,5 +1,5 @@
 {
-  
+
   "Module": {
     "ID": 2,
     "Title": "Agile Game Development with Scrum",
@@ -16,12 +16,12 @@
       {
         "heading": "Agile Game Development with Scrum",
         "type": "text",
-        "text": "Game development is in crisis: facing bloated budgets, impossible schedules, unmanageable complexity, and death march overtime. It’s no wonder so many development studios are struggling to survive. Fortunately, there is a solution. Scrum and Agile methods are already revolutionizing development outside the game industry. Now, the author discusses exactly how to successfully apply these methods to the unique challenges of game development."
+        "text": "<p>Game development is in crisis: facing bloated budgets, impossible schedules, unmanageable complexity, and death march overtime. It’s no wonder so many development studios are struggling to survive. Fortunately, there is a solution. Scrum and Agile methods are already revolutionizing development outside the game industry. Now, the author discusses exactly how to successfully apply these methods to the unique challenges of game development.</p>"
       },
       {
         "heading": "The Problem",
         "type": "text",
-        "text": "<p> The game industry has several unique challenges: </p>                             <ul>                                 <li>Games take several years to complete</li>                                 <li>Team size is often ~100+</li>                                 <li>Waterfall development model is prevalent in the industry and it doesn’t scale</li>                             </ul>                             <p>                                 This has led to a Crisis:                             </p>                             <ul>                                 <li>Projects go over budget (budgets can be tens of millions of dollars). GTA V cost $265M to make!</li>                                 <li>Projects do not stay on schedule</li>                                 <li>Most games are not profitable</li>                                 <li>Lack of innovation</li>                                 <li>Deteriorating work environment for developers</li>                                 <li>Class action lawsuits against EA</li>                             </ul>"
+        "text": "<p>The game industry has several unique challenges: </p><ul><li>Games take several years to complete</li><li>Team size is often \\~100\\+</li><li>Waterfall development model is prevalent in the industry and it doesnt scale</li></ul><p>This has led to a Crisis:</p><ul><li>Projects go over budget(budgets can be tens of millions of dollars).GTA V cost $265M to make!</li><li>Projects do not stay on schedule</li><li>Most games are not profitable</li><li>Lack of innovation</li><li>Deteriorating work environment for developers</li><li>Class action lawsuits against EA</li></ul>"
       },
       {
         "heading": "Some well known game development companies",
@@ -68,7 +68,7 @@
       {
         "heading": "What Is Agile Video Game Development?",
         "type": "video",
-        "link": "https://www.youtube.com/embed/cCKgtwXBl10"
+        "link": "<iframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/cCKgtwXBl10\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
       },
       {
         "heading": "Agile Video Game Development Slides",
@@ -83,12 +83,12 @@
       {
         "heading": "Concluding comments",
         "type": "text",
-        "text": "<p>                                 The challenge of applying agile isn’t in merely adopting the practices. The practices are simple. The real challenge arises in the collision between the culture of a studio, their publisher, and agile.                             </p>                             <p>                                 Agile methodologies such as Scrum create transparency. Every deficiency that obstructs the best flow of work is singled out for examination. Rather than putting faith in a design document, a game needs to stand on its own merit every iteration.                             </p>"
+        "text": "<p>The challenge of applying agile isn’t in merely adopting the practices. The practices are simple. The real challenge arises in the collision between the culture of a studio, their publisher, and agile.</p><p> Agile methodologies such as Scrum create transparency. Every deficiency that obstructs the best flow of work is singled out for examination. Rather than putting faith in a design document, a game needs to stand on its own merit every iteration.</p>"
       },
       {
         "heading": "References",
         "type": "text",
-        "text": "Keith, Clinton. Agile Game Development with Scrum. Addison-Wesley Professional, May 2010, ISBN: 9780321670311"
+        "text": "<p>Keith, Clinton. Agile Game Development with Scrum. Addison-Wesley Professional, May 2010, ISBN: 9780321670311</p>"
       },
       {
         "heading": "Agile Game Development with Scrum Quiz",
@@ -98,7 +98,6 @@
     ]
   }
 }
-
 
 
 

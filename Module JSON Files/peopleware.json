@@ -9,112 +9,27 @@
 		{
 			"heading": "Introduction",
 			"type": "text",
-			"text": "<h1>Literature review</h1>
-      <h3><em>Peopleware: Productive Projects and Teams</em></h3>
-      <h4>Authors:  Tom DeMarco and Timothy Lister</h4>
-      <h5>Reviewer: Trang Quang</h5>
-      <p>
-        This is a popular book on software and team management. Its first edition was published in 1987, and latest edition (3rd) published in 2013. Still it presents a vast amount of insights on how people factor works in software development and phenomena greatly
-        relevant to current workplace. The book approaches sociological or 'political' problems such as group chemistry and team jelling, "flow time" and quiet in the work environment, and the high cost of turnover.
-      </p>
-      <blockquote>
-        The major problems of our work are not so much <i>technological</i> as <em>sociological</em> in nature.
-      </blockquote>"
+			"text": "<h1>Literature review</h1><h3><em>Peopleware: Productive Projects and Teams</em></h3><h4>Authors:  Tom DeMarco and Timothy Lister</h4><h5>Reviewer: Trang Quang</h5><p>This is a popular book on software and team management. Its first edition was published in 1987, and latest edition (3rd) published in 2013. Still it presents a vast amount of insights on how people factor works in software development and phenomena greatly relevant to current workplace. The book approaches sociological or 'political' problems such as group chemistry and team jelling, \"flow time\" and quiet in the work environment, and the high cost of turnover.</p><blockquote>The major problems of our work are not so much <i>technological</i> as <em>sociological</em> in nature. </blockquote>"
 		},
     {
 			"heading": "Managers",
 			"type": "text",
-			"text": "<h1>Managers</h1>
-      <p>
-        Manager pushes for more Productivity by pressuring employees working overtime. The problem is, Overtime is like sprinting. It may work in a short term but definitely not in a long term. Normal people will try to compensate for each hour of overtime. Examples are coming in late in the morning, going for regular tea breaks, or downright working less in low time. Throughout the effort, there will be more or less an hour of “undertime” for every hour of overtime. Overtime does not guarantee improved productivity in the long run. What’s more, overtime will affect employees’ personal lives eventually. Sensible people won’t tolerate Overtime for long, they will quit. How does it cost to managers?
-      </p>
-      <p>
-        Interestingly, when we are discussing about productivity, we rarely mention “turnover rate”. The cost of turnover could be calculated by considering the loss happens when employees quit. Imagine that one employee quit and manager can bring in a new member the next day. This new member, let’s say Ralph, obviously could not produce the same amount of work in first few days compared to the old employee, named Kelly. Day one, Ralph will need to fill out all those benefit forms, set up his machine, etc. Obviously his net production is zero, even negative in case he requests help from other teammates. Over the course of 6 months, let say he manages to ramp up linearly and finally is able to perform the same as Kelly. The company has lost about 3-month cost to replace an employee. This could cost the company more, the book gives 2-year estimate, if one has to replace an experienced worker in a niche field.
-      </p>
-      <p>An easy-to-remember takeaway for managers:</p>
-      <ul>
-        <li>Get the RIGHT people.</li>
-        <li>Make them HAPPY so they don't want to leave.</li>
-        <li>Turn them LOOSE.</li>
-      </ul>
-      <blockquote>
-        The manager’s function is not to make people work, but to make it <i>possible</i> for people to work.
-      </blockquote>"
+			"text": "<h1>Managers</h1><p>Manager pushes for more Productivity by pressuring employees working overtime. The problem is, Overtime is like sprinting. It may work in a short term but definitely not in a long term. Normal people will try to compensate for each hour of overtime. Examples are coming in late in the morning, going for regular tea breaks, or downright working less in low time. Throughout the effort, there will be more or less an hour of “undertime” for every hour of overtime. Overtime does not guarantee improved productivity in the long run. What’s more, overtime will affect employees’ personal lives eventually. Sensible people won’t tolerate Overtime for long, they will quit. How does it cost to managers?</p><p>Interestingly, when we are discussing about productivity, we rarely mention “turnover rate”. The cost of turnover could be calculated by considering the loss happens when employees quit. Imagine that one employee quit and manager can bring in a new member the next day. This new member, let’s say Ralph, obviously could not produce the same amount of work in first few days compared to the old employee, named Kelly. Day one, Ralph will need to fill out all those benefit forms, set up his machine, etc. Obviously his net production is zero, even negative in case he requests help from other teammates. Over the course of 6 months, let say he manages to ramp up linearly and finally is able to perform the same as Kelly. The company has lost about 3-month cost to replace an employee. This could cost the company more, the book gives 2-year estimate, if one has to replace an experienced worker in a niche field.</p><p>An easy-to-remember takeaway for managers:</p><ul><li>Get the RIGHT people.</li><li>Make them HAPPY so they don't want to leave.</li><li>Turn them LOOSE.</li></ul><blockquote>The manager’s function is not to make people work, but to make it <i>possible</i> for people to work.</blockquote>"
 		},
     {
 			"heading": "Employees",
 			"type": "text",
-			"text": "<h1>Employees</h1>
-      <p>
-        One must realize that employees in software industry are thinking workers. Their production roots in their creative activities. In order to produce real work, they need to get into a FLOW. That says it take time for them to get into immersion, and any
-        interruption, say noise or meetings, could greatly affect their flow.
-      </p>
-      <p>
-        Young people has a problem with focus when they grow up with all the readily available technologies around them, i.e. mobile phone. This leads to a state called Constant Partial Attention, and this partiality won’t do any good because they could not focus
-        100% on a task, resulting in half-good production. This introduces a risk of preventing them blending into a team and affecting their productivity.
-      </p>"
+			"text": "<h1>Employees</h1><p>One must realize that employees in software industry are thinking workers. Their production roots in their creative activities. In order to produce real work, they need to get into a FLOW. That says it take time for them to get into immersion, and anyinterruption, say noise or meetings, could greatly affect their flow.</p><p>Young people has a problem with focus when they grow up with all the readily available technologies around them, i.e. mobile phone. This leads to a state called Constant Partial Attention, and this partiality won’t do any good because they could not focus100% on a task, resulting in half-good production. This introduces a risk of preventing them blending into a team and affecting their productivity.</p>"
 		},
     {
       "heading": "Team",
       "type": "text",
-      "text": "<h1>Team</h1>
-      <p>
-        A manager’s life can be so much easier when they could put together a productive team. The book defines a JELLED team as a team with closing knit members, who could make miracles happen in development, or the whole is greater than the sum of the parts. Once succeeded, they have the momentum to make it happen again and again. A few signs about this JELLED team are:
-      </p>
-      <ul>
-        <li>Low turnover, during projects and in the middle of tasks</li>
-        <li>Strong sense of identity</li>
-        <li>A sense of eliteness</li>
-        <li>Joint ownership of the product</li>
-        <li>Obvious enjoyment working in the team</li>
-      </ul>
-      <h2>Teamicide</h2>
-      <p>
-        So how to make this team happen? It was so difficult to come up with the right formula that the authors take the <i>inversion</i> approach, coming up with a list of things that make team impossible, so called Teamicide.
-      </p>
-      <ul>
-        <li>Defensive management</li>
-        <li>Bureaucracy</li>
-        <li>Physical separation</li>
-        <li>Fragmentation of time</li>
-        <li>Clique control</li>
-        <li>Competition</li>
-      </ul>
-      <p>One last word, when people mentions “Management Team”, the “Team” part does not make sense. The book says team normally only happens at the bottom of the hierarchy. Team doesn’t happen at management layer since there exists all the conditions of Teamicide such as competition, physical separation, fragmentation of time, and lastly not sharing ownership of a product.
-      </p>"
+      "text": "<h1>Team</h1><p>A manager’s life can be so much easier when they could put together a productive team. The book defines a JELLED team as a team with closing knit members, who could make miracles happen in development, or the whole is greater than the sum of the parts. Once succeeded, they have the momentum to make it happen again and again. A few signs about this JELLED team are:</p><ul><li>Low turnover, during projects and in the middle of tasks</li><li>Strong sense of identity</li><li>A sense of eliteness</li><li>Joint ownership of the product</li><li>Obvious enjoyment working in the team</li></ul><h2>Teamicide</h2><p>So how to make this team happen? It was so difficult to come up with the right formula that the authors take the <i>inversion</i> approach, coming up with a list of things that make team impossible, so called Teamicide.</p><ul><li>Defensive management</li><li>Bureaucracy</li><li>Physical separation</li><li>Fragmentation of time</li><li>Clique control</li><li>Competition</li></ul><p>One last word, when people mentions “Management Team”, the “Team” part does not make sense. The book says team normally only happens at the bottom of the hierarchy. Team doesn’t happen at management layer since there exists all the conditions of Teamicide such as competition, physical separation, fragmentation of time, and lastly not sharing ownership of a product.</p>"
     },
     {
       "heading": "Healthy culture",
       "type": "text",
-      "text": "<h1>Healthy culture</h1>
-      <p>
-        Teams and projects exist within a context provided by the larger organization, which is called the corporate culture. Even when managers do not have the power to change the corporate culture, they still need to be aware of things that will benefit or inhibit a healthy culture:
-      </p>
-      <ul>
-        <li>Avoid ultimate management sin - \"waste people's time\"</li>
-        <li>Meetings vs ceremonies: A meeting is a ceremony when the more the merrier and at the end of that, there is no action point.</li>
-        <li>E(vil)mail</li>
-        <li>Making Change possible</li>
-        <li>Building a community that employees feel they belong to</li>
-      </ul>
-      <p>Among them, a manager would have to introduce CHANGE sooner or later, under the pressure of evolving technology and production-cost improvement.</p>
-      <h2>Change</h2>
-
-      <blockquote>MANTRA: The fundamental response to change is not logical, but emotional.
-      </blockquote>
-      <img src=\"images/change_models.png\" alt=\"Naive model vs Satir Change model\" style=\"width: 75%; height: 75%;\" />
-      <p>
-        The importance of Satir Change model is that it alerts us Chaos is an integral part of Change. If people think in Naive model and mistake Chaos as “New Status Quo”, they will tend to change back since the New Status Quo is so chaotic. When we are aware of Chaos, the chances of dealing sensibly with it will be much improved.Furthermore, in order to make change happen, managers should make a tolerance environment where a quota of errors and failure is acceptable. Without failure accepted, people won’t take a chance.
-      </p>
-      <h2>Fun to work</h2>
-      <p>Lastly, the ultimate goal of managers will be to make employees enjoy their work. The book proposes a list of ways to introduce a little of “chaos” into the ordered world:</p>
-      <ul>
-        <li>Pilot projects</li>
-        <li>War games</li>
-        <li>Brainstorming</li>
-        <li>Training, celebrations, retreats</li>
-
-      </ul>"
+      "text": "<h1>Healthy culture</h1><p>Teams and projects exist within a context provided by the larger organization, which is called the corporate culture. Even when managers do not have the power to change the corporate culture, they still need to be aware of things that will benefit or inhibit a healthy culture:</p><ul><li>Avoid ultimate management sin - \"waste people's time\"</li><li>Meetings vs ceremonies: A meeting is a ceremony when the more the merrier and at the end of that, there is no action point.</li><li>E(vil)mail</li><li>Making Change possible</li><li>Building a community that employees feel they belong to</li></ul><p>Among them, a manager would have to introduce CHANGE sooner or later, under the pressure of evolving technology and production-cost improvement.</p><h2>Change</h2><blockquote>MANTRA: The fundamental response to change is not logical, but emotional.</blockquote><img src=\"images/change_models.png\" alt=\"Naive model vs Satir Change model\" style=\"width: 75%; height: 75%;\" /><p>The importance of Satir Change model is that it alerts us Chaos is an integral part of Change. If people think in Naive model and mistake Chaos as “New Status Quo”, they will tend to change back since the New Status Quo is so chaotic. When we are aware of Chaos, the chances of dealing sensibly with it will be much improved.Furthermore, in order to make change happen, managers should make a tolerance environment where a quota of errors and failure is acceptable. Without failure accepted, people won’t take a chance.</p><h2>Fun to work</h2><p>Lastly, the ultimate goal of managers will be to make employees enjoy their work. The book proposes a list of ways to introduce a little of “chaos” into the ordered world:</p><ul><li>Pilot projects</li><li>War games</li><li>Brainstorming</li><li>Training, celebrations, retreats</li></ul>"
     },
 		{
 			"heading": "Videos",

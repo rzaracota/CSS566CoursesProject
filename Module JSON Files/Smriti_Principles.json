@@ -1,91 +1,86 @@
-{"Module": {
-	"ID": 8,
-	"Title": "Life and work Principles",
-	"Author": "Smirti Singh",
-	"Courses": [1, 2, 3, 4],
-	"Keywords": ["Management", "Self Improvement", "Team Relationships", "Productivity"],
-	"Layout": [
-		{
-			"heading": "Lesson One",
-			"type": "text",
-			"text": 
-			"<h2> Make your life and work Principles </h2> <p>Ray Dalio defines every life event a logical cause-effect relationship. He noted these relationships, analyzed them, make his own principles to follow at work and throughour his life and reasoned each one.Ray Dalio emphasises on noting the pattern of things that affect you, learn from them and reflect often. </p><p>Every event is either just another one of those things or a new cause-effect event to reflect upon. He emphasises on written principles since visualizing principles keeps a person in line with them every moment. </p>"
-			
-		},
+{
+  "Module": {
+    "ID": 8,
+    "Title": "Life and work Principles",
+    "Author": "Smirti Singh",
+    "Courses": [ 1, 2, 3, 4 ],
+    "Keywords": [ "Management", "Self Improvement", "Team Relationships", "Productivity" ],
+    "Layout": [
+      {
+        "heading": "Lesson One",
+        "type": "text",
+        "text": "<h2> Make your life and work Principles </h2> <p>Ray Dalio defines every life event a logical cause-effect relationship. He noted these relationships, analyzed them, make his own principles to follow at work and throughour his life and reasoned each one.Ray Dalio emphasises on noting the pattern of things that affect you, learn from them and reflect often. </p><p>Every event is either just another one of those things or a new cause-effect event to reflect upon. He emphasises on written principles since visualizing principles keeps a person in line with them every moment. </p>"
 
-		{
-			"heading" :"Ray Dalio's Principles",
-			"type": "image",
-			"link": "https://static01.nyt.com/images/2017/09/10/business/10BRIDGEWATER4/10BRIDGEWATER4-superJumbo.jpg",
-			"caption": "He reflected upon his life events and wrote down his principles after reasoning them"
-		},
+      },
 
-
-
-		{
-			"heading": "Lesson Two",
-			"type": "text",
-			"text": 
-			"<h2> Cultivate Meaningful Relationships </h2> <p>It is people who run businesses. It is therefore important to cultivate meaningful work and meaningful relationships to drive the business to success.He belives in radical truth and radical transparency. He mentions how important it is to know the employees you're working with. </p><p>Every person is wired differently and has different strengths and weaknesses. It is important to acknoledge these in order to make the output more productive. He made a baseball card game, where every person in the projct would write down their strengths and weaknesses and were given work accordinly. Although initially there was stigma around these, they ended up being very productive strategies. </p><p>He therefore expects a leader to be transparent and does not hide his observations about people. While hiring, there are usually two kinds of people who want to work in an organization, those who work for the paycheck and those who carry the organization's vision. The who is generally more important than the what. One must therefore hire, train, test and either promote quickly if they show good perfomance or fire. Do not lower the bar of the company expectations and do not tolerate problems. Bridgewater had a successful work culture due to following these work principles. </p>"
-
-			
-		},
-
-		{
-			"heading" :"Know how people are wired",
-			"type": "image",
-			"link": "https://twitter.com/raydalio/status/930094015755759616",
-			"caption": "He says that every person is wired differently and tht each of their strenghts and weaknesses must be identified before assigning a task."
-		},
+      {
+        "heading": "Ray Dalio's Principles",
+        "type": "image",
+        "link": "https://static01.nyt.com/images/2017/09/10/business/10BRIDGEWATER4/10BRIDGEWATER4-superJumbo.jpg",
+        "caption": "He reflected upon his life events and wrote down his principles after reasoning them"
+      },
 
 
-		{
-			"heading": "Lesson Three",
-			"type": "text",
-			"text": 
-			"<h2> Continuous Self Improvement <\/h2><p>One must always focus on strengthening their exixsing strengths and if they cannot improve their weaknesses, they must find a way around it. Successfull people always find a way around their weaknesses. It is important to visualize progress and get feedback. </p><p>He mentions that, either managing a project or working on self improvement, one must always weigh the must do's more than the like-to-do's. It is important to prioritize things. Another important lesson Ray Dalio talks about is to not be afraid to confront your problems. Only Pain+Reflection= Progress. </p>"
-			
-			
-		},
 
-		{
-			"heading" : "Being a better version of yourself",
-			"type": "image",
-			"link": "https://in.pinterest.com/pin/207587864058655376/",
-			"caption": "While assessing self improvements towards achieving your goal, one must understand the reality and realize the expected bar and the acceptabel bar. They must then track their progress relative to these bars."
-		},
-
-		{
-			"heading": "Lesson Four",
-			"type": "text",
-			"text": 
-			"<h2> Have Bigger Goals </h2><p>Ray Dalio is inspired by successful entrepreneurs like Steve Jobs, Jeff Bazos, Elon Musk etc since they all seem to be following the same trajectory. They are not afraid to fail. He calls all the successful entrepreneurs/scientists etc, as shapers and he learnt a lot from the principles they followed. </p><p>He says that, they first visualize a big dream and then work hard to actualize it. He mentions how everyone should have such goals, no mater how big or small they are, but one must never give up pursuing it and develop a passion for it. To get closer to a goal one must be an independent thinker, nobody can stop them from achieving their goal. One must have a strong enough mental map, willingness to undergo tests and trials. Have a wider range of vision, able to see the big picture, the small picture and the gap between them, to have multiple perspectives. </p><p>They must strive hard to achieve their goals and should not be worried about pleasing or dissapointing other, but at the same time, taking constructive feedback.In the image describing the Hero's Journey, the phases that a hero undergoes are each described below: <br> <ul><li> Call to adenture-The inspiration phase, where the hero's interest sparks in an unexplored domain. </li><li>Crossing the threshold- When the hero has done certain amount of research, they are not afraid to fail anymore as they are so headstrong about achieveing their goal, therefore crossing the threshold.</li><li> The road of trials- When the hero executes a series of trials with multiple successes and failures and keeps going. </li><li> ABYSS- According to Ray Dalio, every Hero goes through a major failure in their journey. It then depends on the Hero, if they decide to give up, as most people do, or understand the important lesson behind this failure and discover a new direction. </li><li> Metamorphosis- Those who have the courage to make it past this failure, learn something very important about their approach and find a new direction to progress in their goal. </li>	<li>The ultimate boon- The hero is finally rewarded with success after their long stuggle and journey of successes and failures. </li> 	<li>Returning the boon-After spending a long time serving their accomplishment, their comes a time where they must retire from this journey and pass on their responsibilities to the next leader! </li></ul></p>"
-				
-			
-			
-		},
-		{
-			"heading" : "The Hero's journey",
-			"type": "image",
-			"link": "https://bearskinblog.files.wordpress.com/2018/03/hero-journey.png",
-			"caption": "He describes every person's struggle to achieve their goals their passionate about as Hero's journey. The hero is not an extraordinary person but any normal person not afraid to fail."
+      {
+        "heading": "Lesson Two",
+        "type": "text",
+        "text": "<h2> Cultivate Meaningful Relationships </h2> <p>It is people who run businesses. It is therefore important to cultivate meaningful work and meaningful relationships to drive the business to success.He belives in radical truth and radical transparency. He mentions how important it is to know the employees you're working with. </p><p>Every person is wired differently and has different strengths and weaknesses. It is important to acknoledge these in order to make the output more productive. He made a baseball card game, where every person in the projct would write down their strengths and weaknesses and were given work accordinly. Although initially there was stigma around these, they ended up being very productive strategies. </p><p>He therefore expects a leader to be transparent and does not hide his observations about people. While hiring, there are usually two kinds of people who want to work in an organization, those who work for the paycheck and those who carry the organization's vision. The who is generally more important than the what. One must therefore hire, train, test and either promote quickly if they show good perfomance or fire. Do not lower the bar of the company expectations and do not tolerate problems. Bridgewater had a successful work culture due to following these work principles. </p>"
 
 
-		{
-			"heading": "Ray Dalio's Interview on his book- Life and Work Principles",
-			"type": "video",
-			"link": "https://www.youtube.com/watch?v=c1OoWdqbKdg",
-			"caption": "video caption"
-		},
-		
-		{
-		
-			"heading": <heading of section>,
-			"type": "quiz",
-			"link": <iframe src="https://www.classmarker.com/online-test/start/?quiz=9pm5afbb37de8ab6&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>
-		},
-	]
-	}
+      },
+
+      {
+        "heading": "Know how people are wired",
+        "type": "image",
+        "link": "https://pbs.twimg.com/media/DOhba9RX4AAktLN.jpg",
+        "caption": "He says that every person is wired differently and tht each of their strenghts and weaknesses must be identified before assigning a task."
+      },
+
+
+      {
+        "heading": "Lesson Three",
+        "type": "text",
+        "text": "<h2> Continuous Self Improvement </h2><p>One must always focus on strengthening their exixsing strengths and if they cannot improve their weaknesses, they must find a way around it. Successfull people always find a way around their weaknesses. It is important to visualize progress and get feedback. </p><p>He mentions that, either managing a project or working on self improvement, one must always weigh the must do's more than the like-to-do's. It is important to prioritize things. Another important lesson Ray Dalio talks about is to not be afraid to confront your problems. Only Pain+Reflection= Progress. </p>"
+
+
+      },
+
+      {
+        "heading": "Being a better version of yourself",
+        "type": "image",
+        "link": "https://i.pinimg.com/236x/b3/8a/9a/b38a9a3d4f72ee5395be36b64af4e6f3.jpg",
+        "caption": "While assessing self improvements towards achieving your goal, one must understand the reality and realize the expected bar and the acceptabel bar. They must then track their progress relative to these bars."
+      },
+
+      {
+        "heading": "Lesson Four",
+        "type": "text",
+        "text": "<h2> Have Bigger Goals </h2><p>Ray Dalio is inspired by successful entrepreneurs like Steve Jobs, Jeff Bazos, Elon Musk etc since they all seem to be following the same trajectory. They are not afraid to fail. He calls all the successful entrepreneurs/scientists etc, as shapers and he learnt a lot from the principles they followed. </p><p>He says that, they first visualize a big dream and then work hard to actualize it. He mentions how everyone should have such goals, no mater how big or small they are, but one must never give up pursuing it and develop a passion for it. To get closer to a goal one must be an independent thinker, nobody can stop them from achieving their goal. One must have a strong enough mental map, willingness to undergo tests and trials. Have a wider range of vision, able to see the big picture, the small picture and the gap between them, to have multiple perspectives. </p><p>They must strive hard to achieve their goals and should not be worried about pleasing or dissapointing other, but at the same time, taking constructive feedback.In the image describing the Hero's Journey, the phases that a hero undergoes are each described below: <br> <ul><li> Call to adenture-The inspiration phase, where the hero's interest sparks in an unexplored domain. </li><li> Crossing the threshold- When the hero has done certain amount of research, they are not afraid to fail anymore as they are so headstrong about achieveing their goal, therefore crossing the threshold.</li><li> The road of trials- When the hero executes a series of trials with multiple successes and failures and keeps going. </li><li> ABYSS- According to Ray Dalio, every Hero goes through a major failure in their journey. It then depends on the Hero, if they decide to give up, as most people do, or understand the important lesson behind this failure and discover a new direction. </li><li> Metamorphosis- Those who have the courage to make it past this failure, learn something very important about their approach and find a new direction to progress in their goal. </li><li> The ultimate boon- The hero is finally rewarded with success after their long stuggle and journey of successes and failures. </li><li> Returning the boon-After spending a long time serving their accomplishment, their comes a time where they must retire from this journey and pass on their responsibilities to the next leader! </li></ul></p>"
+
+
+
+      },
+      {
+        "heading": "The Hero's journey",
+        "type": "image",
+        "link": "https://bearskinblog.files.wordpress.com/2018/03/hero-journey.png",
+        "caption": "He describes every person's struggle to achieve their goals their passionate about as Hero's journey. The hero is not an extraordinary person but any normal person not afraid to fail."
+      },
+      {
+        "heading": "Ray Dalio's Interview on his book- Life and Work Principles",
+        "type": "video",
+        "link": "https://www.youtube.com/embed/c1OoWdqbKdg",
+        "caption": "video caption"
+      },
+      {
+
+        "heading": "Quiz for Life and work Principles",
+        "type": "quiz",
+        "link": "<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=9pm5afbb37de8ab6&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>"
+      }
+    ]
+  }
 }
 
 

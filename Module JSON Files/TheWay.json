@@ -44,10 +44,8 @@
 		{
 			"heading": "The Obstacle is the Way Quiz",
 			"type": "quiz",
-			"link": "<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=xxx5b034dc7189d5&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>",
-			"link2": <iframe src="https://www.classmarker.com/online-test/start/?quiz=xxx5b034dc7189d5&iframe=1" frameborder="0" style="width:100%;max-width:700px;" height="800"></iframe>,
-			"link3": "https://www.classmarker.com/online-test/start/?quiz=xxx5b034dc7189d5"
-		},
+			"link": "<iframe src='https://www.classmarker.com/online-test/start/?quiz=xxx5b034dc7189d5&iframe=1' frameborder='0' style='width:100%;max-width:700px;' height='800'></iframe>"
+		}
 	]
 	}
 }

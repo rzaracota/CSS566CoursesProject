@@ -4,7 +4,7 @@
 	"Author": "Runran Fan",
 	"Courses": [3],
 	"Keywords": ["effective", "engineer", "personal development"],
-	"Layhout":[
+	"Layout":[
 		{
 			"heading" :"The Effective Engineer Book",
 			"type": "image",
@@ -39,13 +39,13 @@
 		{
 			"heading": "Edmond Lau: The Effective Engineer | Talks at Google",
 			"type": "video",
-			"link": "https://www.youtube.com/embed/BnIz7H5ruy0",
+			"link": "https://youtu.be/BnIz7H5ruy0",
 			"caption": "Edmond Lau: The Effective Engineer | Talks at Google"
 		},
 		{
 			"heading": "The Effective Engineer Quiz",
 			"type": "quiz",
-			"link": "'<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=frm5b03f42a4b604&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>'\""
+			"link": "<iframe src=\"https://www.classmarker.com/online-test/start/?quiz=frm5b03f42a4b604&iframe=1\" frameborder=\"0\" style=\"width:100%;max-width:700px;\" height=\"800\"></iframe>'\""
 
 		}
 	]

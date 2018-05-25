@@ -66,10 +66,10 @@ namespace serviceclient.test
 
             var module = modules[0];
 
-            Assert.NotNull(module.CourseModule);
+            Assert.NotNull(module.CourseIds);
 
-            Assert.True(module.CourseModule.ModuleId >= 0);
-            Assert.True(module.CourseModule.CourseId >= 0);
+            Assert.True(module.CourseIds.Count >= 0);
+            Assert.True(module.CourseIds.Count >= 0);
         }
     }
 }

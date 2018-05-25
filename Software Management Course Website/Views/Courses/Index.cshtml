@@ -186,9 +186,10 @@ else
                         case "quiz":
                             <br />
                              <div class="row">
-                                <div class="col-xs-8">
-                                    <h1>@layoutElement.Heading</h1>
-                                </div>
+                                 <div class="col-xs-8">
+                                     <h1>@layoutElement.Heading</h1>
+                                     @Html.Raw(layoutElement.Link)
+                                 </div>
                             </div>
                             <br />
                             break;

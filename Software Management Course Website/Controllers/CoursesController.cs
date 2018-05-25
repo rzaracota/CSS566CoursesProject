@@ -16,7 +16,7 @@ namespace Software_Management_Course_Website.Controllers
         public CoursesController()
         {
             // Load JSON here
-            using (StreamReader r = new StreamReader(@"Data/AgileGameDevelopmentModule.json"))
+            using (StreamReader r = new StreamReader(@"Data/Smriti_Principles.json"))
             {
                 string json = r.ReadToEnd();
                 items = JsonConvert.DeserializeObject<Models.RootObject>(json);

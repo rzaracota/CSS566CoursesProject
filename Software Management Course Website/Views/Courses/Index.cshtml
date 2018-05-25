@@ -93,12 +93,13 @@ else
     <div class="container">
         <div class="row">
             <div class="col-sm-3" style="margin-top: 15px">
-                <nav id="toc" data-spy="affix" data-toggle="toc">
-                    <a href="https://www.amazon.com/Beyond-Legacy-Code-Practices-Software/dp/1680500791">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51i2wpsNuKL._SX415_BO1,204,203,200_.jpg"
-                             style="width: 40%; height: 40%;"
-                             alt="Beyond Legacy Code Front Cover" />
-                    </a>
+                <nav id="toc" data-spy="affix" data-toggle="toc" style="overflow-wrap: break-word !important;">
+                    @{var m = Model.Module.Layout.Where(im => im.Type == "titleimage").FirstOrDefault();}
+                    @if(m != null && m.Link != null)
+                    {
+                    <img src=@m.Link style="width: 40%; height: 40%;"
+                         alt="Book Front Cover" />
+                    }
                 </nav>
 
             </div>

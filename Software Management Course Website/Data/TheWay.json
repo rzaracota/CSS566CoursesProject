@@ -1,0 +1,54 @@
+{"Module": {
+	"ID": 11,
+	"Title": "The Obstacle is the Way",
+	"Author": "David Stech",
+	"Courses": [],
+	"Keywords": ["Problem Solving"],
+	"Layout": [
+		{
+			"heading" : "The Obstacle is the Way Book",
+			"type": "titleimage",
+			"link": "https://images-na.ssl-images-amazon.com/images/I/51xcOSxtYEL.jpg",
+			"caption": "The Obstacle is the Way: The Timeless Art of Turning Trials into Triumph by Ryan Holiday"
+		},
+		{
+			"heading": "Introduction",
+			"type": "text",
+			"text": "<p>\"This thing in front of you. This issue. This obstacle--This frustrating, unfortunate, problematic, unexpected problem preventing you from doing what you want to do.\" But what if this obstacle actually became an opportunity? That is what this book is about. This module will cover what these obstacles could be and how to overcome them. You may see parallels between this problem solving framework and the software management frameworks that appear in other parts of this website.</p>"
+		},
+		{
+			"heading": "The Obstacles",
+			"type": "text",
+			"text": "<p> What are your obstacles? What is holding you back? Could it be physical? Size. Race. Distance. Disability. Money. Or maybe it's mental? Fear. Uncertainty. Inxeperience. Prejudice. Whatever it is, these are obstacles, no one is denying that, but find a list of those who came before you. Look at the atheletes that were too small or the Pilots whose eyesight wasn't good enough. Look at the dreamers, dropouts and dyslexics. Look at those that came from nothing, what happened to them? Many gave up, but a few didn't. For these few within those obstacles was an opportunity and we can learn from them. How does one overcome these obstacles? That is a a discipline of three critical steps. These three interdependent disciplines are Perception, Action and Will. While it sounds like a simple process, it is never easy.</p>"
+		},
+		{
+			"heading": "Perception",
+			"type": "text",
+			"text": "<p>What is perception? It is how we see and understand what occurs around us <b>and</b> what we decide those events will mean. When one person sees a crisis, anotehr can see opportunity. Where one loses control of emotions, another can remain calm. Things like desperation, despair, fear, powerlessness are reactions that are functions of our perceptions. Realize that nothing makes us feel this way: we choose to give in to such feelings or we can choose not to. Too often do we react emotionally and lose perspective and all that does is turn bad things into really bad things. Unhelpful perceptions can invade our minds. Discipline in perception lets you clearly see the advantages and the proper course of action in every situation. Here are a few things to keep in mind when faced with an obstacle: <ul><li>Be objective</li><li>Control emotions and keep an even keel</li><li>Choose to see the good in a situation</li><li>Steady our nerves</li><li>Ignore what disturbs or limits others</li><li>Place things in perspective</li><li>Revert to the present moment</li><li>Focus on what can be controlled</li></ul></p>"
+		},
+		{
+			"heading": "Action",
+			"type": "text",
+			"text": "<p>Action is commonplace, while right action is not. What is action as a discipline? It is not <i>any</i> kind of action, but directed purposeful action that is important. We have all said to ourselves \"I am so overwhelmed, tired, stressed, busy, blocked, outmatched, etc.\" But then what do we do about it? Do we ignore the situation or pretend it doesn't exist? Or do we figure out what to do and act? People overcome these obstacles all the time. People with physical disabilities, who have faced racial descirimination, who have battles superior armies did not quit. They focused and applied themselves by taking action. Many times we don't have the luxury of running away or hiding. There will be no one coming to save us. If we are then to accomplish what we claim our goals are, we must meet our problems with the right action. Therefore, we can always greet our obstacles: <ul><li>with energy</li><li>with persistence</li><li>with a coherent and deliberate process</li><li>with iteration and resilience</li><li>with pragmatism</li><li>with strategic vision</li><li>with craftiness and savvy</li><li>and with an eye for opportunity and pivitol moments</li></ul></p>"
+		},
+		{
+			"heading": "Will",
+			"type": "text",
+			"text": "<p>What is will? Will is our internal power, which can never be affected by the outside world. If perception and action are the disciplines of the mind and the body, then will is the discipline of the heart and soul. Wil is fortitude and wisdom, not just about specific obstacles, but about life itself. We can think, act and adjust to a world which is inherently unpredictable and it is the Will that prepares us for this, protects us against it, and allows us to thrive and be happy in spite of it. Using our will, we can: <ul><li>always prepare ourselves for more difficult times</li><li>always accept what we're unable to change</li><li>always manage our expectations</li><li>always persevere</li><li>always learn to love our fate and what happens to us</li><li>always protect our inner self</li><li>always submit to a greater and larger cause</li><li>always remind ourselves of our own mortality</li></ul></p>"
+		},
+		{
+			"heading": "Summary",
+			"type": "text",
+			"text": "<p>Using these three disciplines, Perception, Action, and Will, in conjunction with each other, you can overcome obstacles. You can make the obstacles become the way. People wil make pointed remarks. They will cut us off in traffic or steal our business. We will be hurt or forces will try to hold us back. Bad things will happen. But we can turn this to our advantage; we can make it an opportunity. Remember to: <ul><li>See thing for what they are.</li><li>Do what we can.</li><li>Endure and bear what we must.</li></ul> What blocked the path now is a path. What once impeded action advances action. The Obstacle is the Way.</p>"
+		},
+		{
+			"heading": "The Obstacle is the Way Quiz",
+			"type": "quiz",
+			"link": "<iframe src='https://www.classmarker.com/online-test/start/?quiz=xxx5b034dc7189d5&iframe=1' frameborder='0' style='width:100%;max-width:700px;' height='800'></iframe>"
+		}
+	]
+	}
+}
+
+
+

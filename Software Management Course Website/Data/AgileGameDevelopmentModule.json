@@ -1,7 +1,7 @@
 {
   
   "Module": {
-    "ID": 1,
+    "ModuleId": 1,
     "Title": "Agile Game Development with Scrum",
     "Author": "Navjodh S. Dhillon",
     "Courses": [ "Course A", "Course B" ],

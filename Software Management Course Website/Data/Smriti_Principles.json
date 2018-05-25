@@ -1,6 +1,6 @@
 {
   "Module": {
-    "ID": 8,
+    "ModuleId": 8,
     "Title": "Life and work Principles",
     "Author": "Smirti Singh",
     "Courses": [ 1, 2, 3, 4 ],

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using serviceclient;
 using serviceclient.types;
 
@@ -14,14 +15,20 @@ namespace Software_Management_Course_Website.Controllers
     {
         private Models.RootObject items;
         
-        private static string endpoint = "http://localhost:1738/module";
+        private static string endpoint = "http://css566backend.azurewebsites.net/module";
 
         private ServiceClient<Module> client = new ServiceClient<Module>(endpoint);
     
         public List<Module> Modules { get; private set; } 
 
-        public ModulesController()
+        public string Message { get; set; }
+
+        public ModulesController(IConfiguration configuration)
         {
+            // test for presence of keys
+            endpoint = configuration["backendapi:uri"];
+            Message = configuration["backendapi:message"];
+
             client = new ServiceClient<Module>(endpoint);
         }
 
@@ -30,6 +37,7 @@ namespace Software_Management_Course_Website.Controllers
             var model = new ModulesViewModel();
 
             model.Modules = client.Get();
+            model.Message = string.IsNullOrEmpty(Message) ? "message not set" : Message;
 
             return View(model);
         }

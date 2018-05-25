@@ -19,6 +19,9 @@ namespace Software_Management_Course_Website
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseConfiguration(new ConfigurationBuilder()
+                                    .AddJsonFile("appsettings.json", false)
+                                    .Build())
                 .UseStartup<Startup>()
                 .Build();
     }

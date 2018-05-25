@@ -10,5 +10,14 @@ namespace serviceclient.types
 
         [DataMember]
         public string Type { get; set; }
+
+        [DataMember]
+        public string Link { get; set; }
+
+        [DataMember]
+        public string Caption { get; set; }
+
+        [DataMember]
+        public string Text { get; set; }
     }
 }

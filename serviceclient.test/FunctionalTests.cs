@@ -6,7 +6,7 @@ namespace serviceclient.test
 {
     public class Modules
     {
-        private static string endpoint = "http://localhost:1738/module";
+        private static string endpoint = "http://css566backend.azurewebsites.net/module";
 
         private static ServiceClient<Module> client = new ServiceClient<Module>(endpoint);
 

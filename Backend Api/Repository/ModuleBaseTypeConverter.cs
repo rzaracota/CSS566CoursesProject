@@ -1,4 +1,5 @@
 ﻿using Backend_Api.Repo_Model;
+using BackendApi.Repo_Model;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -39,6 +40,10 @@ namespace Backend_Api.Repository
                     else if (token["Type"].ToString().Equals("image"))
                     {
                         layoutList.Add(token.ToObject<ModuleImageContent>());
+                    }
+                    else if (token["Type"].ToString().Equals("titleimage"))
+                    {
+                        layoutList.Add(token.ToObject<ModuleTitleImageContent>());
                     }
                     else if (token["Type"].ToString().Equals("quiz"))
                     {

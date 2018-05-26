@@ -162,6 +162,17 @@ else
         }
     </div>
 </div>
+
+<div class="row">
+    <h3>Courses&quest;</h3>
+    <ol>
+        @foreach (var module in Model.Modules) {
+            var path = "/module/" + module.ModuleId;
+
+            <li><a href=@path>@module.Title</a></li>
+        }
+    </ol>
+</div>
 }
 
 @section Scripts {

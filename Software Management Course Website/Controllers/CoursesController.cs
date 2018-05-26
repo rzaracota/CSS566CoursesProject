@@ -11,6 +11,7 @@ using serviceclient.types;
 
 namespace Software_Management_Course_Website.Controllers
 {
+    [Route("course")]
     public class CoursesController : Controller
     {
         private Course items;
@@ -37,9 +38,20 @@ namespace Software_Management_Course_Website.Controllers
             var model = new CoursesViewModel();
 
             model.Courses = client.Get();
+
             model.Message = string.IsNullOrEmpty(Message) ? "message not set" : Message;
 
             return View(model);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(string id) {
+            var viewModel = new CoursesViewModel();
+
+            viewModel.Course = client.Get(id);
+            viewModel.Message = "A course";
+
+            return View("Index", viewModel);
         }
     }
 }

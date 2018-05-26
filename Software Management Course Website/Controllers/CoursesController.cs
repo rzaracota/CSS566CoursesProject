@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
@@ -13,7 +13,7 @@ namespace Software_Management_Course_Website.Controllers
 {
     public class CoursesController : Controller
     {
-        private Models.Course items;
+        private Course items;
         
         private static string endpoint = "http://css566backend.azurewebsites.net/";
 

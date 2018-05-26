@@ -34,9 +34,15 @@ namespace Backend_Api.Controllers
         /// </summary>
         /// <returns>The get.</returns>
         [HttpGet]
-        public List<CourseApi> Get()
+        public IActionResult Get()
         {
-            return repository.GetAllCourses();
+            var result = repository.GetAllCourses();
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
         // GET course/5
@@ -46,9 +52,15 @@ namespace Backend_Api.Controllers
         /// <returns>the course</returns>
         /// <param name="id">Identifier.</param>
         [HttpGet("{id}")]
-        public CourseApi Get(string id)
+        public IActionResult Get(string id)
         {
-            return repository.GetCourse(id);
+            var result = repository.GetCourse(id);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
 

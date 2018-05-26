@@ -32,9 +32,16 @@ namespace Backend_Api.Controllers
         /// </summary>
         /// <returns>A List of all modules</returns>
         [HttpGet]
-        public List<ModuleApi> GetAsync()
+        public IActionResult GetAsync()
         {
-            return repository.GetAllModules();
+            var result = repository.GetAllModules();
+
+            if (result == null || !result.Any())
+            {
+                return NotFound();
+            }
+            return Ok(result);
+
         }
 
         // GET module/5
@@ -44,9 +51,15 @@ namespace Backend_Api.Controllers
         /// <returns>a module</returns>
         /// <param name="id">Identifier.</param>
         [HttpGet("{id}")]
-        public ModuleApi GetAsync(string id)
+        public IActionResult GetAsync(string id)
         {
-            return repository.GetModule(id);
+            var result = repository.GetModule(id);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
         // POST module/

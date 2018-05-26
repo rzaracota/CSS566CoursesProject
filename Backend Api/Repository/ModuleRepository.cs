@@ -24,6 +24,10 @@ namespace Backend_Api.Repository {
 
         public Module ConvertModuleApiToModule(ModuleApi api)
         {
+            if (api == null)
+            {
+                return null;
+            }
             Module dataModel = new Module();
             dataModel.Author = api.Author;
             dataModel.CourseIds = api.CourseIds;
@@ -35,6 +39,10 @@ namespace Backend_Api.Repository {
 
         public ModuleApi ConvertModuleToModuleApi(Module dataModel)
         {
+            if (dataModel == null)
+            {
+                return null;
+            }
             ModuleApi api = new ModuleApi();
             api.Author = dataModel.Author;
             api.CourseIds = dataModel.CourseIds;

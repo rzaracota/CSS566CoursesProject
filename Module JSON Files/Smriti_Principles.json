@@ -2,7 +2,7 @@
   "Module": {
     "ID": 8,
     "Title": "Life and work Principles",
-    "Author": "Smirti Singh",
+    "Author": "Smriti Singh",
     "Courses": [ 1, 2, 3, 4 ],
     "Keywords": [ "Management", "Self Improvement", "Team Relationships", "Productivity" ],
     "Layout": [
@@ -15,7 +15,7 @@
 
       {
         "heading": "Ray Dalio's Principles",
-        "type": "image",
+        "type": "titleimage",
         "link": "https://static01.nyt.com/images/2017/09/10/business/10BRIDGEWATER4/10BRIDGEWATER4-superJumbo.jpg",
         "caption": "He reflected upon his life events and wrote down his principles after reasoning them"
       },

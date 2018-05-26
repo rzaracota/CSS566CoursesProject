@@ -31,6 +31,7 @@ namespace Backend_Api.Repository {
             Module dataModel = new Module();
             dataModel.Author = api.Author;
             dataModel.CourseIds = api.CourseIds;
+            dataModel.Keywords = api.Keywords;
             dataModel.Layout = api.Layout;
             dataModel.Title = api.Title;
             dataModel.ModuleId = api.ModuleId;
@@ -46,6 +47,7 @@ namespace Backend_Api.Repository {
             ModuleApi api = new ModuleApi();
             api.Author = dataModel.Author;
             api.CourseIds = dataModel.CourseIds;
+            api.Keywords = dataModel.Keywords;
             api.Layout = dataModel.Layout;
             api.Title = dataModel.Title;
             api.ModuleId = dataModel.ModuleId;

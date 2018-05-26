@@ -15,7 +15,7 @@ namespace Software_Management_Course_Website.Models
 
     public class Module
     {
-        [JsonProperty("ID")]
+        [JsonProperty("ModuleId")]
         public int ID { get; set; }
         [JsonProperty("Title")]
         public string Title { get; set; }

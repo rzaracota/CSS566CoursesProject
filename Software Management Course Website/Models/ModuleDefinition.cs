@@ -8,13 +8,14 @@ namespace Software_Management_Course_Website.Models
 {
     public class RootObject
     {
-        [JsonProperty("Module")]
-        public Module Module { get; set; }
+        /* [JsonProperty("Module")]
+        public Module Module { get; set; } */
+        public serviceclient.types.Module Module { get; set; }
     }
 
     public class Module
     {
-        [JsonProperty("ID")]
+        [JsonProperty("ModuleId")]
         public int ID { get; set; }
         [JsonProperty("Title")]
         public string Title { get; set; }

@@ -30,7 +30,7 @@ namespace serviceclient
             };
 
             listSerializer = new DataContractJsonSerializer(typeof(List<T>), serializerOptions);
-            objectSerializer = new DataContractJsonSerializer(typeof(List<T>), serializerOptions);
+            objectSerializer = new DataContractJsonSerializer(typeof(T), serializerOptions);
         }
 
         public List<T> Get() {
@@ -43,7 +43,8 @@ namespace serviceclient
 
         public T Get(string id)
         {
-            var stream = client.GetStreamAsync(Endpoint + $@"/{id}").Result;
+            var endpoint = Endpoint + $@"/{id}";
+            var stream = client.GetStreamAsync(endpoint).Result;
 
             return objectSerializer.ReadObject(stream) as T;
         }

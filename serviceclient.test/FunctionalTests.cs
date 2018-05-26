@@ -6,7 +6,7 @@ namespace serviceclient.test
 {
     public class Modules
     {
-        private static string endpoint = "http://localhost:1738/module";
+        private static string endpoint = "http://css566backend.azurewebsites.net/module";
 
         private static ServiceClient<Module> client = new ServiceClient<Module>(endpoint);
 
@@ -66,10 +66,10 @@ namespace serviceclient.test
 
             var module = modules[0];
 
-            Assert.NotNull(module.CourseModule);
+            Assert.NotNull(module.CourseIds);
 
-            Assert.True(module.CourseModule.ModuleId >= 0);
-            Assert.True(module.CourseModule.CourseId >= 0);
+            Assert.True(module.CourseIds.Count >= 0);
+            Assert.True(module.CourseIds.Count >= 0);
         }
     }
 }

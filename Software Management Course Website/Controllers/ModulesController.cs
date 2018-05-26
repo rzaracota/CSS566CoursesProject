@@ -38,7 +38,11 @@ namespace Software_Management_Course_Website.Controllers
 
         public IActionResult Index()
         {
-            var viewModel = client.Get();
+            var viewModel = new ModulesViewModel();
+            
+            viewModel.Modules = client.Get();
+
+            viewModel.Module = viewModel.Modules.FirstOrDefault();
 
             return View(viewModel);
         }

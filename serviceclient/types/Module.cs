@@ -16,6 +16,9 @@ namespace serviceclient.types {
         [DataMember]
         public List<int> CourseIds { get; set; }
         
+        [DataMember]
+        public List<string> Keywords { get; set; }
+
         [DataMember (Name = "Layout")]
         public List<ModuleBaseContent> Layout { get; set; }
     }

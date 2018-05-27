@@ -17,6 +17,9 @@ namespace Backend_Api
     {
         public static void Main(string[] args)
         {
+            // Toggle on/off to add dummy data to the DB on startup
+            bool loadDummyData = false;
+
             // add initial fake data for testing
             CourseApi course1 = new CourseApi
             {
@@ -62,13 +65,16 @@ namespace Backend_Api
                 var services = scope.ServiceProvider;
                 try
                 {
-                    IModuleRepository moduleRepository
-                        = services.GetRequiredService<IModuleRepository>();
-                    moduleRepository.CreateModule(module1);
+                    if (loadDummyData)
+                    {
+                        IModuleRepository moduleRepository
+                            = services.GetRequiredService<IModuleRepository>();
+                        moduleRepository.CreateModule(module1);
 
-                    ICourseRepository courseRepository
-                        = services.GetRequiredService<ICourseRepository>();
-                    courseRepository.CreateCourse(course1);
+                        ICourseRepository courseRepository
+                            = services.GetRequiredService<ICourseRepository>();
+                        courseRepository.CreateCourse(course1);
+                    }
                 }
                 catch (Exception ex)
                 {

@@ -27,20 +27,9 @@
       "text": "<h1>Team</h1><p>A manager’s life can be so much easier when they could put together a productive team. The book defines a JELLED team as a team with closing knit members, who could make miracles happen in development, or the whole is greater than the sum of the parts. Once succeeded, they have the momentum to make it happen again and again. A few signs about this JELLED team are:</p><ul><li>Low turnover, during projects and in the middle of tasks</li><li>Strong sense of identity</li><li>A sense of eliteness</li><li>Joint ownership of the product</li><li>Obvious enjoyment working in the team</li></ul><h2>Teamicide</h2><p>So how to make this team happen? It was so difficult to come up with the right formula that the authors take the <i>inversion</i> approach, coming up with a list of things that make team impossible, so called Teamicide.</p><ul><li>Defensive management</li><li>Bureaucracy</li><li>Physical separation</li><li>Fragmentation of time</li><li>Clique control</li><li>Competition</li></ul><p>One last word, when people mentions “Management Team”, the “Team” part does not make sense. The book says team normally only happens at the bottom of the hierarchy. Team doesn’t happen at management layer since there exists all the conditions of Teamicide such as competition, physical separation, fragmentation of time, and lastly not sharing ownership of a product.</p>"
     },
     {
-      "heading": "Healthy Culture",
+      "heading": "Healthy culture",
       "type": "text",
-			"text": "<h1>Healthy culture</h1><p>Teams and projects exist within a context provided by the larger organization, which is called the corporate culture. Even when managers do not have the power to change the corporate culture, they still need to be aware of things that will benefit or inhibit a healthy culture:</p><ul><li>Avoid ultimate management sin - \"waste people's time\"</li><li>Meetings vs ceremonies: A meeting is a ceremony when the more the merrier and at the end of that, there is no action point.</li><li>E(vil)mail</li><li>Making Change possible</li><li>Building a community that employees feel they belong to</li></ul><p>Among them, a manager would have to introduce CHANGE sooner or later, under the pressure of evolving technology and production-cost improvement.</p><h2>Change</h2><blockquote>MANTRA: The fundamental response to change is not logical, but emotional.</blockquote>"
-		},
-		{
-			"heading": "Naive Model vs Satir Change Model",
-			"type": "image",
-			"link": "images/change_models.png",
-			"caption": ""
-		},
-		{
-			"heading": "Satir Change Model",
-			"type": "text",
-			"text":"<p>The importance of Satir Change model is that it alerts us Chaos is an integral part of Change. If people think in Naive model and mistake Chaos as “New Status Quo”, they will tend to change back since the New Status Quo is so chaotic. When we are aware of Chaos, the chances of dealing sensibly with it will be much improved.Furthermore, in order to make change happen, managers should make a tolerance environment where a quota of errors and failure is acceptable. Without failure accepted, people won’t take a chance.</p><h2>Fun to work</h2><p>Lastly, the ultimate goal of managers will be to make employees enjoy their work. The book proposes a list of ways to introduce a little of “chaos” into the ordered world:</p><ul><li>Pilot projects</li><li>War games</li><li>Brainstorming</li><li>Training, celebrations, retreats</li></ul>"
+      "text": "<h1>Healthy culture</h1><p>Teams and projects exist within a context provided by the larger organization, which is called the corporate culture. Even when managers do not have the power to change the corporate culture, they still need to be aware of things that will benefit or inhibit a healthy culture:</p><ul><li>Avoid ultimate management sin - \"waste people's time\"</li><li>Meetings vs ceremonies: A meeting is a ceremony when the more the merrier and at the end of that, there is no action point.</li><li>E(vil)mail</li><li>Making Change possible</li><li>Building a community that employees feel they belong to</li></ul><p>Among them, a manager would have to introduce CHANGE sooner or later, under the pressure of evolving technology and production-cost improvement.</p><h2>Change</h2><blockquote>MANTRA: The fundamental response to change is not logical, but emotional.</blockquote><img src=\"images/change_models.png\" alt=\"Naive model vs Satir Change model\" style=\"width: 75%; height: 75%;\" /><p>The importance of Satir Change model is that it alerts us Chaos is an integral part of Change. If people think in Naive model and mistake Chaos as “New Status Quo”, they will tend to change back since the New Status Quo is so chaotic. When we are aware of Chaos, the chances of dealing sensibly with it will be much improved.Furthermore, in order to make change happen, managers should make a tolerance environment where a quota of errors and failure is acceptable. Without failure accepted, people won’t take a chance.</p><h2>Fun to work</h2><p>Lastly, the ultimate goal of managers will be to make employees enjoy their work. The book proposes a list of ways to introduce a little of “chaos” into the ordered world:</p><ul><li>Pilot projects</li><li>War games</li><li>Brainstorming</li><li>Training, celebrations, retreats</li></ul>"
     },
 		{
 			"heading": "Videos",
@@ -54,6 +43,7 @@
 			"link": "https://www.youtube.com/embed/cmv9REAAHxU",
 			"caption": "Tom DeMarco talking about Leadership"
 		}
+
 	]
 	}
 }

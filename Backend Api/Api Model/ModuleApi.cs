@@ -13,6 +13,7 @@ namespace Backend_Api.Repo_Model {
         public ModuleApi()
         {
             CourseIds = new List<string>();
+            Keywords = new List<string>();
             Layout = new List<ModuleBaseContent>();
         }
 
@@ -27,6 +28,9 @@ namespace Backend_Api.Repo_Model {
 
         [JsonProperty(PropertyName = "CourseIds")]
         public List<string> CourseIds { get; set; }
+
+        [JsonProperty(PropertyName = "Keywords")]
+        public List<string> Keywords { get; set; }
 
         [JsonProperty(PropertyName = "Layout")]
         [JsonConverter(typeof(ModuleBaseTypeConverter))]

@@ -36,7 +36,7 @@ namespace Backend_Api.Controllers
         {
             var result = repository.GetAllModules();
 
-            if (result == null || !result.Any())
+            if (result == null)
             {
                 return NotFound();
             }

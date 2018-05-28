@@ -1,0 +1,23 @@
+﻿@model Software_Management_Course_Website.Models.CoursesDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Html.DisplayFor(m => m.Course.Name)</h2>
+
+<table class="table table-hover">
+    <tbody>
+        @foreach(Module module in Model.Modules)
+        {
+           <tr>
+               <td class="text-center">
+                   <a asp-controller="Modules" asp-action="Get" asp-route-id="@module.ModuleID">
+                        @Html.DisplayFor(m => module.Title)
+                   </a>
+               </td>
+           </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,30 @@
+﻿@model CoursesViewModel
+@{
+    ViewData["Title"] = "Available Courses";
+
+    //Model.Module = Model.Modules.First();
+}
+
+@*<h2>Course Content</h2>*@
+
+@if (Model == null || Model.Courses == null)
+{
+    <h2><strong>Sorry, no courses are available at this time :(</strong></h2>
+}
+else
+{
+    <p>
+        <h4>List of Courses Availabe:</h4>
+        @foreach (var course in Model.Courses)
+        {
+            <h4>
+                @course.Name
+            </h4>
+            foreach(var moduleId in course.ModuleIds)
+            {
+                <h5>@moduleId</h5>
+                <h5>@moduleId</h5>
+            }
+        }
+    </p>
+}

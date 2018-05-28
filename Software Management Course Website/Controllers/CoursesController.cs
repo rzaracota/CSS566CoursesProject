@@ -41,5 +41,9 @@ namespace Software_Management_Course_Website.Controllers
 
             return View(model);
         }
+
+        //            ViewBag.DataPoints = JsonConvert.SerializeObject(dataPoints);
+
+            //return View("~/Views/Courses.cshtml");
     }
 }

@@ -1,0 +1,187 @@
+@model ModulesViewModel
+@{
+    ViewData["Title"] = "Modules";
+    Layout = "_Layout";
+}
+
+@if (Model == null || Model.Module == null) { 
+    <h2><strong>Sorry, no content is available at this time</strong></h2>
+} else {
+    <!--jQuery-->
+    <!--<script src = "https://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin = "anonymous"></script>-->
+
+
+    <!--Bootstrap CSS & JS-->
+    <!--<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity = "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin = "anonymous">
+
+     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity = "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin = "anonymous" ></script>
+
+        -->
+          <!--Bootstrap table of contents plugin -->
+             <!--<script src = "https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js" ></script>-->
+<!--<body data-spy="scroll" data-target="#toc">-->
+<div class="row">
+    <div class="col-sm-3" style="margin-top: 15px">
+        <nav id="toc" data-spy="affix" data-toggle="toc" style="word-wrap: break-word; max-width: 300px;">
+            @{var m = Model.Module.Layout.Where(im => im.Type == "titleimage").FirstOrDefault();}
+            @if(m != null && m.Link != null)
+            {
+            <img src=@m.Link style="width: 40%; height: 40%;"
+                    alt="Book Front Cover" />
+            }
+        </nav>
+
+    </div>
+    <div class="col-sm-9">
+        <div class="row">
+            <div class="col-xs-8">
+                <h1>@Model.Module.Title</h1><br />
+                <h3>Author: @Model.Module.Author</h3><br />
+                <h3>Courses in this Module:</h3>
+                <ul>
+                    @foreach (var course in Model.Module.CourseIds)
+                    {
+                        <li>
+                            @course
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        @foreach (var layoutElement in Model.Module.Layout)
+        {
+            switch (layoutElement.Type)
+            {
+                case "image":
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="image">
+                                <img src=@layoutElement.Link
+                                        style="width: 50%; height: 50%;"
+                                        alt="Agile Game Development with Scrum" />
+                                <div>@layoutElement.Caption</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    break;
+
+                case "text":
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <p>
+                                <h1>@layoutElement.Heading</h1>
+                                @Html.Raw(layoutElement.Text)
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                    break;
+
+                case "video":
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <p>
+                                <h1>@layoutElement.Heading</h1>
+                                <br />
+                                <iframe width="560"
+                                        height="315"
+                                        src=@layoutElement.Link
+                                        frameborder="0"
+                                        allow="autoplay; encrypted-media"
+                                        allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                    break;
+
+                case "slideset":
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <h1>@layoutElement.Heading</h1>
+                            <br />
+                            <iframe src=@layoutElement.Link
+                                    width='722px' height='565px'
+                                    frameborder='0'></iframe>
+                        </div>
+                    </div>
+                    <br />
+                    break;
+
+                case "quiz":
+                    <br />
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h1>@layoutElement.Heading</h1>
+                                @Html.Raw(layoutElement.Link)
+                            </div>
+                    </div>
+                    <br />
+                    break;
+
+                case "custom":
+                    <br />
+                        <div class="row">
+                        <div class="col-xs-8">
+                            <h1>@layoutElement.Heading</h1>
+                            @Html.Raw(layoutElement.Link)
+                        </div>
+                    </div>
+                    <br />
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    </div>
+</div>
+}
+
+@section Scripts {
+    <script type = "text/javascript">
+                $(document).ready(function() {
+        $("#quiz").submit(function(e) {
+                // validate the user's answers
+                var totalCorrect = 0;
+                var expectedIndicies = [1, 2, 3, 1];
+                var total = expectedIndicies.length;
+
+                for (var i = 0; i < expectedIndicies.length; i++)
+                {
+                    var id = "input[name=practice" + (i + 1) + "]:checked";
+                    var userIndex = parseInt($(this).find(id).val());
+
+                    if (expectedIndicies[i] == userIndex)
+                    {
+                        totalCorrect += 1;
+                    }
+                }
+
+                if (totalCorrect !== total)
+                {
+                    alert(totalCorrect
+                          + "/"
+                          + total
+                          + " correct, please try again");
+                }
+                else
+                {
+                    alert(totalCorrect
+                          + "/"
+                          + total
+                          + " correct, good job!");
+                }
+
+                e.preventDefault();
+            });
+        });
+    </script>
+}

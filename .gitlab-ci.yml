@@ -43,6 +43,7 @@ variables:
 stages:
   - build
   - test
+  - deploy_review
   - review
   - dast
   - staging
@@ -75,6 +76,11 @@ test:
     - dotnet test serviceclient.test
   only:
     - branches
+ 
+deploy_to_review:
+  stage: deploy_review
+  script:
+    - curl -X POST -u $USER_STRING https://css566-smcw-review1.scm.azurewebsites.net/deploy --data "{ format: 'basic', url: 'git@$CI_REPOSITORY_URL' }"
 
 codequality:
   image: docker:stable

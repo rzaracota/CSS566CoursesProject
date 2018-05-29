@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-Software_Management_Course_Website-BAA5353A-6C4C-4B09-8D36-576015AF60EA</UserSecretsId>
+    <AssemblyName>SoftwareManagementCourseWebsite</AssemblyName>
+    <RootNamespace>SoftwareManagementCourseWebsite</RootNamespace>
   </PropertyGroup>
 
 

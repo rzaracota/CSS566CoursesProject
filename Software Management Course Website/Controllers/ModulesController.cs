@@ -43,8 +43,6 @@ namespace Software_Management_Course_Website.Controllers
             
             viewModel.Modules = client.Get();
 
-            viewModel.Module = viewModel.Modules.FirstOrDefault();
-
             return View(viewModel);
         }
 
@@ -54,11 +52,7 @@ namespace Software_Management_Course_Website.Controllers
 
             viewModel.Module = client.Get(id);
 
-            // get all the modules for testing.
-            // this is used to generate a list of modules
-            viewModel.Modules = client.Get();
-
-            return View("Index", viewModel);
+            return View("Module", viewModel);
         }
     }
 }

@@ -80,7 +80,7 @@ test:
 deploy_to_review:
   stage: deploy_review
   script:
-    - curl -X POST -u $USER_STRING https://css566-smcw-review1.scm.azurewebsites.net/deploy --data "{ format: 'basic', url: 'git@$CI_REPOSITORY_URL' }"
+    - curl -X POST -u $USER_STRING https://css566-smcw-review1.scm.azurewebsites.net/deploy --data $DEPLOY_JSON
 
 codequality:
   image: docker:stable

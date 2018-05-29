@@ -6,10 +6,10 @@ RUN dotnet restore
 
 COPY . ./
 
-RUN cd smcw && dotnet publish -c Release -o ../out
+RUN cd "Software Management Course Website" && dotnet publish -c Release -o ../out
 
 FROM microsoft/aspnetcore:latest
 WORKDIR /frontend
 COPY --from=build-env /frontend/out out/
 
-ENTRYPOINT ["dotnet", "Software Management Course Website.dll"]
+ENTRYPOINT ["dotnet", "SoftwareManagementCourseWebsite.dll"]

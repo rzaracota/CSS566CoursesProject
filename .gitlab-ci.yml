@@ -81,7 +81,7 @@ deploy_to_review:
   stage: deploy_review
   image: appropriate/curl:latest
   script:
-    - curl -X POST -u $USER_STRING https://css566-smcw-review1.scm.azurewebsites.net/deploy --data $DEPLOY_JSON
+    - curl -X POST -u $USER_STRING https://css566-smcw-review1.scm.azurewebsites.net/deploy --data "$DEPLOY_JSON"
 
 codequality:
   image: docker:stable
